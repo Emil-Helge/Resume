@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   const ScrollToId = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
     const targetId = event.currentTarget.dataset.target as string;
@@ -12,14 +18,25 @@ function Header() {
   };
 
   return (
-    <header className="text-white py-2 px-4">
-      <nav className="flex flex-row h-12">
+    <header
+      className={`overflow-y-hidden text-white py-2 px-4 md:${
+        menuOpen ? "h-60" : ""
+      }`}
+    >
+      <nav className="p-0 m-0">
         <div className="text-3xl md:hidden">
-          <button className="burger-menu flex absolute right-4 top-3">
+          <button
+            onClick={toggleMenu}
+            className="burger-menu flex absolute right-4 top-3"
+          >
             <i className="fa-solid fa-bars h-7"></i>
           </button>
         </div>
-        <ul className="flex flex-col text-xl font-extrabold items-center mt-12 gap-5 md:mt-0 md:flex-row md:justify-center">
+        <ul
+          className={`flex flex-col text-xl font-extrabold items-center mt-12 gap-5  ${
+            menuOpen ? "" : "hidden"
+          } md:flex md:flex-row md:justify-center md:mt-0`}
+        >
           <li>
             <a
               href="#About"
