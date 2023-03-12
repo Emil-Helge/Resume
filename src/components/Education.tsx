@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import HrAnimation from "./HrAnimation";
 
 function Education() {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -47,7 +48,7 @@ function Education() {
           </button>
         )}
       </div>
-      <hr className="mt-11 mb-11 w-1/3 scroll-animation-hidden border-[#00d1cd]" />
+      <HrAnimation width="33%" />
     </>
   );
 }

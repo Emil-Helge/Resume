@@ -1,3 +1,5 @@
+import HrAnimation from "./HrAnimation";
+
 function About() {
   return (
     <>
@@ -33,7 +35,7 @@ function About() {
           adapt and adjust accordingly.
         </p>
       </div>
-      <hr className="mt-11 mb-11 w-2/3 scroll-animation-hidden xl:w-full border-[#00d1cd]"></hr>
+      <HrAnimation width="66%" />
     </>
   );
 }
