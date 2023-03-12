@@ -2,16 +2,16 @@ import HrAnimation from "./HrAnimation";
 
 function Skills() {
   const skillsData = [
-    { label: "HTML-and-CSS", value: 85 },
-    { label: "UX-and-Usability", value: 78 },
+    { label: "HTML-and-CSS", value: 95 },
+    { label: "UX-and-Usability", value: 85 },
     { label: "Javascript", value: 75 },
     { label: "Typescript", value: 71 },
-    { label: "React", value: 51 },
+    { label: "React", value: 55 },
   ];
 
   let totalDuration = 0;
-  const keyframes = skillsData.map((skill, index) => {
-    const duration = (skill.value / 100) * 2.5;
+  const keyframes = skillsData.map((skill) => {
+    const duration = (skill.value / 100) * 1.6;
     const delay = totalDuration;
     totalDuration += duration;
     return `
@@ -32,12 +32,12 @@ function Skills() {
         <h1 className="text-4xl font-mono font-extrabold mb-2 first-letter:text-[#00d1cd]">
           Skills
         </h1>
-        {skillsData.map(({ label, value }, index) => (
-          <div key={index} className="self-end">
+        {skillsData.map(({ label, value }) => (
+          <div key={label} className="self-end">
             <div>{label.replace(/-and-/g, " & ")}</div>
             <div className="flex bg-slate-700 border-b-2 border-[#00d1cd] justify-start items-center rounded-xl pl-1 pr-1 h-10 w-60 self-end ">
               <div className={`  h-7 w-0 bg-gray-300 rounded-xl ${label}`} />
-              <span className="ml-1 font-extrabold text-sm">{value}%</span>
+              <span className="ml-1 font-extrabold text-sm"></span>
             </div>
           </div>
         ))}
