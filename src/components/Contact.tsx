@@ -34,7 +34,7 @@ function Contact() {
             className="fa-brands fa-square-github fa-3x opacity-60 hover:opacity-100 hover:text-[#00d1cd]"
           ></a>
           <a
-            href="mailto:helgesson.emil.94@gmail.com"
+            href="mailto:emil.helgesson@medieinstitutet.se"
             target="_blank"
             id="emailIcon"
             className="fa-solid fa-square-envelope fa-3x opacity-60 hover:opacity-100 hover:text-[#00d1cd]"
