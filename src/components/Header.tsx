@@ -11,7 +11,7 @@ function Header() {
           <li>
             <a
               href="#About"
-              className="border-b-2 rounded-md p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]"
+              className="border-b-2 rounded-sm p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]"
             >
               About
             </a>
@@ -19,7 +19,7 @@ function Header() {
           <li>
             <a
               href="#Skills"
-              className="border-b-2 rounded-md p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]"
+              className="border-b-2 rounded-sm p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]"
             >
               Skills
             </a>
@@ -27,7 +27,7 @@ function Header() {
           <li>
             <a
               href="#Education"
-              className="border-b-2 rounded-md p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]"
+              className="border-b-2 rounded-sm p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]"
             >
               Education
             </a>
@@ -35,7 +35,7 @@ function Header() {
           <li>
             <a
               href="#Contact"
-              className="border-b-2 rounded-md p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]"
+              className="border-b-2 rounded-sm p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]"
             >
               Contact
             </a>
