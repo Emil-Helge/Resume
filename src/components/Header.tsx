@@ -1,4 +1,16 @@
+import React from "react";
+
 function Header() {
+  const ScrollToId = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    const targetId = event.currentTarget.dataset.target as string;
+    const targetElement = document.getElementById(targetId) as HTMLElement;
+    window.scrollTo({
+      behavior: "smooth",
+      top: targetElement.offsetTop,
+    });
+  };
+
   return (
     <header className="text-white py-2 px-4">
       <nav className="flex flex-row h-12">
@@ -12,6 +24,8 @@ function Header() {
             <a
               href="#About"
               className="border-b-2 rounded-sm p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]"
+              data-target="About"
+              onClick={ScrollToId}
             >
               About
             </a>
@@ -20,6 +34,8 @@ function Header() {
             <a
               href="#Skills"
               className="border-b-2 rounded-sm p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]"
+              data-target="Skills"
+              onClick={ScrollToId}
             >
               Skills
             </a>
@@ -28,6 +44,8 @@ function Header() {
             <a
               href="#Education"
               className="border-b-2 rounded-sm p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]"
+              data-target="Education"
+              onClick={ScrollToId}
             >
               Education
             </a>
@@ -36,6 +54,8 @@ function Header() {
             <a
               href="#Contact"
               className="border-b-2 rounded-sm p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]"
+              data-target="Contact"
+              onClick={ScrollToId}
             >
               Contact
             </a>
