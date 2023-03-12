@@ -41,7 +41,7 @@ function Education() {
         {showBackToTop && (
           <button
             onClick={handleBackToTop}
-            className="fixed xl:bottom-16 xl:right-10 bottom-0 right-0 p-5 opacity-50 hover:opacity-100 hover:text-[#00d1cd] transition duration-500 ease-in-out transform hover:animate-wiggle"
+            className="fixed xl:bottom-16 xl:right-10 bottom-0 right-0 p-3 opacity-50 hover:opacity-100 hover:text-[#00d1cd] transition duration-500 ease-in-out transform hover:animate-wiggle"
           >
             <i className="fa-solid fa-arrow-up fa-xl"></i>
           </button>
