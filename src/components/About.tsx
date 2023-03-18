@@ -1,4 +1,5 @@
 import HrAnimation from './HrAnimation';
+import ResumeNameLogo from '/src/images/resume-name-alt-logo.png';
 
 function About() {
   return (
@@ -8,7 +9,7 @@ function About() {
           About me
         </h1>
         <img
-          src="/public/images/CV-name-alt-logo.png"
+          src={ResumeNameLogo}
           alt="Image with name and logo"
           className="w-40"
         />

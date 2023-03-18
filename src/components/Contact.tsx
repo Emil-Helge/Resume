@@ -1,3 +1,5 @@
+import Selfie from '/src/images/selfie.jpg';
+
 function Contact() {
   return (
     <>
@@ -9,7 +11,7 @@ function Contact() {
           Contact
         </h1>
         <img
-          src="/public/images/Selfie.jpg"
+          src={Selfie}
           alt="Picture of me"
           className="w-44 border-y-2 rounded-full border-[#00d1ce4f]"
         />
