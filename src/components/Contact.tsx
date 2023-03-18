@@ -1,4 +1,4 @@
-import selfie from '../images/selfie.jpg';
+import selfie from '../images/Selfie.jpg';
 
 function Contact() {
   return (
