@@ -1,39 +1,27 @@
+import { useTranslation } from 'react-i18next';
 import HrAnimation from './HrAnimation';
 import ResumeNameLogo from '/src/images/resume-name-alt-logo.png';
 
 function About() {
+  const { t } = useTranslation();
+
   return (
     <>
       <div id="About" className="flex flex-col pl-5 pr-5 pt-5 gap-3 text-lg">
         <h1 className="text-4xl font-mono font-extrabold mb-2 first-letter:text-[#00d1cd]">
-          About me
+          {t('about-header')}
         </h1>
         <img
           src={ResumeNameLogo}
           alt="Image with name and logo"
           className="w-40"
         />
-        <h2 className="text-xl font-mono font-extrabold">
-          Front End Developer Student
-        </h2>
+        <h2 className="text-xl font-mono font-extrabold">{t('front-end')}</h2>
         <p className="md:w-2/3  scroll-animation-hidden">
-          I am currently studying a two year program at Medieinstitutet in
-          Gothenburg and aspiring to get to work as a{' '}
-          <span className="text-[#00d1cd]">Front End Developer</span> in the
-          coming years. I have had a genuine interest for web development for
-          almost a decade now and am very eager to get to put all of my passion
-          into practice and start to learn all the ins and outs that comes with
-          the job. I have a strong drive to learn and experience new things and
-          whenever challenges appear I am not one to shy away from them and that
-          is a trait that I truly believe will be of great use in this business.
+          {t('about-text-one')}
         </p>
         <p className="md:w-2/3  scroll-animation-hidden">
-          I aspire to be up to date and familiar with the most frequently
-          occuring frameworks such as{' '}
-          <span className="text-[#00d1cd]">React JS</span>,{' '}
-          <span className="text-[#00d1cd]">Next JS</span> &{' '}
-          <span className="text-[#00d1cd]">Angular</span> in order to be able to
-          adapt and adjust accordingly.
+          {t('about-text-two')}
         </p>
       </div>
       <HrAnimation width="66%" />

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import LanguageToggle from './LanguageToggleBtn';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -84,6 +85,7 @@ function Header() {
             </a>
           </li>
         </ul>
+        <LanguageToggle />
       </nav>
     </header>
   );
