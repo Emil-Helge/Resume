@@ -32,7 +32,7 @@ function Skills() {
         <h1 className="text-4xl font-mono font-extrabold mb-2 first-letter:text-[#00d1cd]">
           Skills
         </h1>
-        {skillsData.map(({ label, value }) => (
+        {skillsData.map(({ label }) => (
           <div key={label} className="self-end">
             <div>{label.replace(/-and-/g, " & ")}</div>
             <div className="flex bg-slate-700 border-b-2 border-[#00d1cd] justify-start items-center rounded-xl pl-1 pr-1 h-10 w-60 self-end ">

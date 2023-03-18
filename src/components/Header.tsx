@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +12,7 @@ function Header() {
     const targetId = event.currentTarget.dataset.target as string;
     const targetElement = document.getElementById(targetId) as HTMLElement;
     window.scrollTo({
-      behavior: "smooth",
+      behavior: 'smooth',
       top: targetElement.offsetTop,
     });
   };
@@ -20,7 +20,7 @@ function Header() {
   return (
     <header
       className={`overflow-y-hidden text-white py-2 px-4 md:${
-        menuOpen ? "h-60" : ""
+        menuOpen ? 'h-60' : ''
       }`}
     >
       <nav className="p-0 m-0">
@@ -34,13 +34,13 @@ function Header() {
         </div>
         <ul
           className={`flex flex-col text-xl font-extrabold items-center mt-12 gap-5  ${
-            menuOpen ? "" : "hidden"
+            menuOpen ? '' : 'hidden'
           } md:flex md:flex-row md:justify-center md:mt-0`}
         >
           <li>
             <a
               href="#About"
-              className="border-b-2 rounded-sm p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]"
+              className="rounded-xl p-4 border-[#00d1cd] hover:bg-[#00d1ceb4]"
               data-target="About"
               onClick={ScrollToId}
             >
@@ -50,7 +50,7 @@ function Header() {
           <li>
             <a
               href="#Skills"
-              className="border-b-2 rounded-sm p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]"
+              className="rounded-xl p-4 border-[#00d1cd] hover:bg-[#00d1ceb4]"
               data-target="Skills"
               onClick={ScrollToId}
             >
@@ -60,7 +60,7 @@ function Header() {
           <li>
             <a
               href="#Education"
-              className="border-b-2 rounded-sm p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]"
+              className="rounded-xl p-4 border-[#00d1cd] hover:bg-[#00d1ceb4]"
               data-target="Education"
               onClick={ScrollToId}
             >
@@ -70,7 +70,7 @@ function Header() {
           <li>
             <a
               href="#Contact"
-              className="border-b-2 rounded-sm p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]"
+              className="rounded-xl p-4 border-[#00d1cd] hover:bg-[#00d1ceb4]"
               data-target="Contact"
               onClick={ScrollToId}
             >
