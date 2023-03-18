@@ -1,12 +1,12 @@
-import HrAnimation from "./HrAnimation";
+import HrAnimation from './HrAnimation';
 
 function Skills() {
   const skillsData = [
-    { label: "HTML-and-CSS", value: 95 },
-    { label: "UX-and-Usability", value: 85 },
-    { label: "Javascript", value: 75 },
-    { label: "Typescript", value: 71 },
-    { label: "React", value: 55 },
+    { label: 'HTML-and-CSS', value: 95 },
+    { label: 'UX-and-Usability', value: 85 },
+    { label: 'Javascript', value: 75 },
+    { label: 'Typescript', value: 71 },
+    { label: 'React', value: 55 },
   ];
 
   let totalDuration = 0;
@@ -34,10 +34,9 @@ function Skills() {
         </h1>
         {skillsData.map(({ label }) => (
           <div key={label} className="self-end">
-            <div>{label.replace(/-and-/g, " & ")}</div>
-            <div className="flex bg-slate-700 border-b-2 border-[#00d1cd] justify-start items-center rounded-xl pl-1 pr-1 h-10 w-60 self-end ">
-              <div className={`  h-7 w-0 bg-gray-300 rounded-xl ${label}`} />
-              <span className="ml-1 font-extrabold text-sm"></span>
+            <div>{label.replace(/-and-/g, ' & ')}</div>
+            <div className="flex bg-slate-700 border-r-[0.1rem] border-[#00d1cd] rounded-lg h-10 w-60">
+              <div className={`  h-10  bg-gray-300 rounded-lg ${label}`} />
             </div>
           </div>
         ))}
