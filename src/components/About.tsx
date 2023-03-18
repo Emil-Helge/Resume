@@ -8,7 +8,7 @@ function About() {
           About me
         </h1>
         <img
-          src="/dist/images/CV-name-alt-logo.png"
+          src="/public/images/CV-name-alt-logo.png"
           alt="Image with name and logo"
           className="w-40"
         />

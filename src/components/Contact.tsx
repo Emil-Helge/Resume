@@ -9,7 +9,7 @@ function Contact() {
           Contact
         </h1>
         <img
-          src="/dist/images/Selfie.jpg"
+          src="/public/images/Selfie.jpg"
           alt="Picture of me"
           className="w-44 border-y-2 rounded-full border-[#00d1ce4f]"
         />

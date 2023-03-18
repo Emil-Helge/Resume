@@ -17,7 +17,7 @@ function Portfolio() {
       </div>
       <div className="flex justify-center gap-4 flex-wrap mt-5 text-lg">
         <PortfolioCard
-          imageSrc="/dist/images/bumpy.png"
+          imageSrc="/public/images/bumpy.png"
           altText="Bumpy Monster title"
           firstDescription="Bumpy Monster was created for an assignment by myself and five other students where we used p5.js, TypeScript and worked with OOP."
           secondDescription="Learn more about the game or try it out by checking it out on GitHub or play the demo by clicking the links below"
@@ -26,7 +26,7 @@ function Portfolio() {
           demoIcon="fa-solid fa-gamepad"
         />
         <PortfolioCard
-          imageSrc="/dist/images/GHEDb.png"
+          imageSrc="/public/images/GHEDb.png"
           altText="GHEDb title"
           firstDescription="GHEDb was created for an assignment by myself and two other students where we used React, Typescript, worked with an API and used Styled-Components."
           secondDescription="Learn more about the site or browse it for yourself by checking it out on GitHub or view the demo by clicking the links below"
