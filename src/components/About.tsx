@@ -12,9 +12,9 @@ function About() {
           alt="Image with name and logo"
           className="w-40"
         />
-        <h1 className="text-xl font-mono font-extrabold">
+        <h2 className="text-xl font-mono font-extrabold">
           Front End Developer Student
-        </h1>
+        </h2>
         <p className="md:w-2/3  scroll-animation-hidden">
           I am currently studying a two year program at Medieinstitutet in
           Gothenburg and aspiring to get to work as a{' '}

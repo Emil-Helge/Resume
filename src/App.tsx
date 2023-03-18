@@ -2,6 +2,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Education from './components/Education';
 import Header from './components/Header';
+import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <About />
         <Skills />
         <Education />
+        <Portfolio />
         <Contact />
       </div>
     </div>

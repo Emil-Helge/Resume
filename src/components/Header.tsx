@@ -45,12 +45,22 @@ function Header() {
           </li>
           <li>
             <a
-              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] w-screen block md:inline text-center"
               href="#Skills"
+              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] w-screen block md:inline text-center"
               data-target="Skills"
               onClick={ScrollToId}
             >
               Skills
+            </a>
+          </li>
+          <li>
+            <a
+              href="#Portfolio"
+              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] w-screen block md:inline text-center"
+              data-target="Portfolio"
+              onClick={ScrollToId}
+            >
+              Portfolio
             </a>
           </li>
           <li>
