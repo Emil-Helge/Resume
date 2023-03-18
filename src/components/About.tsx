@@ -3,7 +3,7 @@ import HrAnimation from './HrAnimation';
 function About() {
   return (
     <>
-      <div className="flex flex-col pl-5 pr-5 pt-5 gap-3 text-lg">
+      <div id="About" className="flex flex-col pl-5 pr-5 pt-5 gap-3 text-lg">
         <h1 className="text-4xl font-mono font-extrabold mb-2 first-letter:text-[#00d1cd]">
           About me
         </h1>
