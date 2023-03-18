@@ -6,7 +6,7 @@ import Skills from './components/Skills';
 
 function App() {
   return (
-    <div className="flex flex-col gap-6 items-center bg-slate-800 font-custom text-sm text-gray-200 lg:text-lg ">
+    <div className="flex flex-col items-center bg-slate-800 font-custom text-sm text-gray-200 lg:text-lg ">
       <Header />
       <div className="max-w-screen-xl">
         <About />

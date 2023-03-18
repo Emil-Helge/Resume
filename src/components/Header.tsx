@@ -18,11 +18,7 @@ function Header() {
   };
 
   return (
-    <header
-      className={`overflow-y-hidden text-white py-2 px-4 md:${
-        menuOpen ? 'h-60' : ''
-      }`}
-    >
+    <header className="overflow-y-hidden text-white py-2 px-4 ">
       <nav className="p-0 m-0">
         <div className="text-3xl md:hidden">
           <button
@@ -33,14 +29,14 @@ function Header() {
           </button>
         </div>
         <ul
-          className={`flex flex-col text-xl font-extrabold items-center mt-12 gap-5  ${
+          className={`flex flex-col text-xl font-extrabold items-center mt-12 gap-5 ${
             menuOpen ? '' : 'hidden'
-          } md:flex md:flex-row md:justify-center md:mt-0`}
+          } md:flex md:flex-row  md:mt-0`}
         >
           <li>
             <a
               href="#About"
-              className="rounded-xl p-4 border-[#00d1cd] hover:bg-[#00d1ceb4]"
+              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] w-screen block md:inline text-center"
               data-target="About"
               onClick={ScrollToId}
             >
@@ -49,8 +45,8 @@ function Header() {
           </li>
           <li>
             <a
+              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] w-screen block md:inline text-center"
               href="#Skills"
-              className="rounded-xl p-4 border-[#00d1cd] hover:bg-[#00d1ceb4]"
               data-target="Skills"
               onClick={ScrollToId}
             >
@@ -60,7 +56,7 @@ function Header() {
           <li>
             <a
               href="#Education"
-              className="rounded-xl p-4 border-[#00d1cd] hover:bg-[#00d1ceb4]"
+              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] w-screen block md:inline text-center"
               data-target="Education"
               onClick={ScrollToId}
             >
@@ -70,7 +66,7 @@ function Header() {
           <li>
             <a
               href="#Contact"
-              className="rounded-xl p-4 border-[#00d1cd] hover:bg-[#00d1ceb4]"
+              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] w-screen block md:inline text-center"
               data-target="Contact"
               onClick={ScrollToId}
             >

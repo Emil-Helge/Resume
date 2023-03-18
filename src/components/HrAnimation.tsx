@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from 'react';
 
 interface HrAnimationProps {
   width: string;
@@ -28,7 +28,7 @@ function HrAnimation({ width }: HrAnimationProps) {
     <hr
       ref={hrRef}
       className={`mt-11 mb-11 xl:w-full border-[#00d1cd]`}
-      style={{ width: "0%" }}
+      style={{ width: '0%' }}
     />
   );
 }

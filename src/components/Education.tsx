@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import HrAnimation from "./HrAnimation";
+import { useEffect, useState } from 'react';
+import HrAnimation from './HrAnimation';
 
 function Education() {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -12,20 +12,23 @@ function Education() {
         setShowBackToTop(false);
       }
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const handleBackToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
   return (
     <>
-      <div id="Education" className="flex flex-col text-left pl-5 gap-5">
+      <div
+        id="Education"
+        className="flex flex-col text-left pl-5 gap-5 text-lg"
+      >
         <h1 className="text-4xl font-mono font-extrabold mb-2 first-letter:text-[#00d1cd]">
           Education
         </h1>
