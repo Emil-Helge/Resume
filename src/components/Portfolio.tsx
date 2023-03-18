@@ -10,7 +10,7 @@ function Portfolio() {
         <h1 className="text-4xl font-mono font-extrabold mb-2 first-letter:text-[#00d1cd]">
           Portfolio
         </h1>
-        <p className="text-lg">
+        <p className="text-lg md:w-2/4 place-self-center">
           Here are a couple of group projects that I have had the pleasure of
           working on along with fellow students from Medieinstitutet
         </p>

@@ -18,10 +18,19 @@ function PortfolioCard({
   demoIcon,
 }: Props) {
   return (
-    <div className="rounded-lg max-w-xs flex flex-col gap-3 text-center">
-      <img src={imageSrc} alt={altText} className="rounded-lg h-28" />
-      <div className="bg-slate-900 min-h-[23rem] flex flex-col place-content-between">
+    <div className="max-w-xs flex flex-col gap-3 text-center">
+      <a
+        href={demoUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-2xl h-full drop-shadow-[0_0_0.15rem_rgba(0,209,205,0.5)]"
+      >
+        <img src={imageSrc} alt={altText} className="rounded-2xl h-full" />
+      </a>
+
+      <div className="bg-slate-900 min-h-[23rem] flex flex-col place-content-between rounded-2xl ">
         <p className=" px-3 mt-3">{firstDescription}</p>
+        <hr className="border-[#00d1cd] mx-2" />
         <p className=" px-3">{secondDescription}</p>
         <div className="flex place-content-between p-3">
           <a

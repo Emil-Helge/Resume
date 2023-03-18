@@ -11,14 +11,14 @@ function Contact() {
         <img
           src="/dist/images/Selfie.jpg"
           alt="Picture of me"
-          className="w-44 border-y-4 rounded-full border-[#00d1ce88]"
+          className="w-44 border-y-2 rounded-full border-[#00d1ce4f]"
         />
         <p className="text-center max-w-xl scroll-animation-hidden">
           If you would like to get in touch with me or learn more about me you
-          can visit my Linkedin page or send me an email by clicking the icons
-          below. Additionally, if you are curious about my previous projects and
-          want to know what I am currently working on you can also visit my
-          Github page.
+          can visit my LinkedIn page or send me an email by clicking the icons
+          below. Additionally, if you are curious about more of my previous
+          projects and want to know what I am currently working on you can also
+          visit my GitHub page.
         </p>
         <div className="icon-container w-full flex gap-4 justify-center mt-3 mb-7">
           <a
