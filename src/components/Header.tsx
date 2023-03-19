@@ -24,7 +24,7 @@ function Header() {
         <div className="text-3xl md:hidden">
           <button
             onClick={toggleMenu}
-            className="burger-menu flex absolute right-4 top-3"
+            className="burger-menu flex absolute top-0 right-0 p-2"
           >
             <i className="fa-solid fa-bars h-7"></i>
           </button>

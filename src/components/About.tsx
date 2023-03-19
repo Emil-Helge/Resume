@@ -8,7 +8,7 @@ function About() {
   return (
     <>
       <div id="About" className="flex flex-col pl-5 pr-5 pt-5 gap-3 text-lg">
-        <h1 className="text-4xl font-mono font-extrabold mb-2 first-letter:text-[#00d1cd]">
+        <h1 className="text-4xl font-mono font-extrabold mb-2 pt-7 md:pt-0 first-letter:text-[#00d1cd]">
           {t('about-header')}
         </h1>
         <img
