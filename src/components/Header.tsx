@@ -85,8 +85,8 @@ function Header() {
             </a>
           </li>
         </ul>
-        <LanguageToggle />
       </nav>
+      <LanguageToggle />
     </header>
   );
 }
