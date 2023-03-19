@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import LanguageToggle from './LanguageToggleBtn';
 
 function Header() {
+  const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -41,7 +43,7 @@ function Header() {
               data-target="About"
               onClick={ScrollToId}
             >
-              About
+              {t('about-title')}
             </a>
           </li>
           <li>
@@ -51,7 +53,7 @@ function Header() {
               data-target="Skills"
               onClick={ScrollToId}
             >
-              Skills
+              {t('skills-title')}
             </a>
           </li>
           <li>
@@ -61,7 +63,7 @@ function Header() {
               data-target="Education"
               onClick={ScrollToId}
             >
-              Education
+              {t('education-title')}
             </a>
           </li>
           <li>
@@ -71,7 +73,7 @@ function Header() {
               data-target="Portfolio"
               onClick={ScrollToId}
             >
-              Portfolio
+              {t('portfolio-title')}
             </a>
           </li>
           <li>
@@ -81,7 +83,7 @@ function Header() {
               data-target="Contact"
               onClick={ScrollToId}
             >
-              Contact
+              {t('contact-title')}
             </a>
           </li>
         </ul>
