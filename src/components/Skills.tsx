@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import HrAnimation from './HrAnimation';
 import useInView from './useInView';
 
 function Skills() {
+  const { t } = useTranslation();
+
   const { ref, inView } = useInView(0.4);
 
   const [animationApplied, setAnimationApplied] = useState(false);
@@ -45,7 +48,7 @@ function Skills() {
         {/* Attach the ref to this wrapping div */}
         <div id="Skills" className="flex flex-col text-right pr-5 gap-5">
           <h1 className="text-4xl font-mono font-extrabold mb-2 first-letter:text-[#00d1cd]">
-            Skills
+            {t('skills-title')}
           </h1>
           {skillsData.map(({ label }) => (
             <div key={label} className="self-end">
@@ -60,12 +63,12 @@ function Skills() {
             </div>
           ))}
           <h4 className="text-2xl font-bold">
-            Additional proficiencies include
+            {t('skills-description-header')}
           </h4>
           <p className="text-lg">
-            Editing images with Gimp
+            {t('skills-description-one')}
             <br />
-            Working with interface design in Figma
+            {t('skills-description-two')}
           </p>
         </div>
       </div>

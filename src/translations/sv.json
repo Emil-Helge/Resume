@@ -8,5 +8,12 @@
   "about-header": "Om Mig",
   "front-end": "Front End Utvecklare Student",
   "about-text-one":"Jag studerar ett tvåårigt program på Medieinstitutet i Göteborg och strävar efter att få jobba som Front End Utvecklare inom de kommande åren. Jag har haft ett geniunt intresse för webbutveckling i nästan tio år och jag är väldigt ivrig att få applicera all min passion för området och börja lära mig allt som har med yrket att göra. Jag har ett starkt driv för att ständigt lära mig och uppleva nya saker.",
-  "about-text-two": "Jag eftersträvar att hålla mig uppdaterad och med de vanligaste förekommande ramverken som bland annat React JS, Next JS och Angular för att kunna anpassa och utrusta mig för nya projekt så väl som möjligt."
+  "about-text-two": "Jag eftersträvar att hålla mig uppdaterad och med de vanligaste förekommande ramverken som bland annat React JS, Next JS och Angular för att kunna anpassa och utrusta mig för nya projekt så väl som möjligt.",
+
+  "skills-description-header": "Ytterligare färdigheter inkluderar",
+  "skills-description-one": "Redigera bilder med Gimp",
+  "skills-description-two": "Arbeta med gränssnittsdesign i Figma",
+
+
+  "portfolio-description-header":"Här så finner ni ett par utvalda gruppprojekt som jag har haft nöjet att ta del utav och arbeta med tillsammans med mina klasskamraet från Medieinstitutet"
 }

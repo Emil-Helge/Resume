@@ -1,8 +1,11 @@
+import { useTranslation } from 'react-i18next';
 import PortfolioCard from './Portfolio-card';
 import Bumpy from '/src/images/bumpy.png';
 import GHEDb from '/src/images/GHEDb.png';
 
 function Portfolio() {
+  const { t } = useTranslation();
+
   return (
     <>
       <div
@@ -10,11 +13,10 @@ function Portfolio() {
         className="flex flex-col pl-5 pr-5 pt-5 gap-3 text-lg text-center"
       >
         <h1 className="text-4xl font-mono font-extrabold mb-2 first-letter:text-[#00d1cd]">
-          Portfolio
+          {t('portfolio-title')}
         </h1>
         <p className="text-lg md:w-2/4 place-self-center">
-          Here are a couple of group projects that I have had the pleasure of
-          working on along with fellow students from Medieinstitutet
+          {t('portfolio-description-header')}
         </p>
       </div>
       <div className="flex justify-center gap-4 flex-wrap mt-5 text-lg">

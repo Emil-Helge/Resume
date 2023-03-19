@@ -1,7 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import BackToTopBtn from './BackToTopBtn';
 import HrAnimation from './HrAnimation';
 
 function Education() {
+  const { t } = useTranslation();
+
   return (
     <>
       <div
@@ -9,7 +12,7 @@ function Education() {
         className="flex flex-col text-left pl-5 gap-5 text-lg"
       >
         <h1 className="text-4xl font-mono font-extrabold mb-2 first-letter:text-[#00d1cd]">
-          Education
+          {t('education-title')}
         </h1>
         <div className="flex gap-12 content-center">
           <div>
