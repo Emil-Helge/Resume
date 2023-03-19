@@ -1,6 +1,6 @@
 # My personal resume
 
-I have updated my resume to better present relevant information about myself.
+I have updated my resume to bettet represent myself and what I have to offer.
 
 In addition to the information about myself, I have carefully styled the page to be both responsive and with a rather minimalistic and clean design with a touch of **Javascript** to create flow and interactivity.
 
