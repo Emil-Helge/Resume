@@ -1,6 +1,9 @@
+import { useTranslation } from 'react-i18next';
 import selfie from '../images/Selfie.jpg';
 
 function Contact() {
+  const { t } = useTranslation();
+
   return (
     <>
       <div
@@ -8,7 +11,7 @@ function Contact() {
         className="flex flex-col pl-5 pr-5 pt-5 gap-3 items-center"
       >
         <h1 className="text-4xl text-center font-mono font-extrabold mb-2 first-letter:text-[#00d1cd]">
-          Contact
+          {t('contact-title')}
         </h1>
         <img
           src={selfie}
@@ -16,11 +19,7 @@ function Contact() {
           className="w-44 border-y-2 rounded-full border-[#00d1ce4f]"
         />
         <p className="text-center max-w-xl scroll-animation-hidden">
-          If you would like to get in touch with me or learn more about me you
-          can visit my LinkedIn page or send me an email by clicking the icons
-          below. Additionally, if you are curious about more of my previous
-          projects and want to know what I am currently working on you can also
-          visit my GitHub page.
+          {t('contact-text')}
         </p>
         <div className="icon-container w-full flex gap-4 justify-center mt-3 mb-7">
           <a
