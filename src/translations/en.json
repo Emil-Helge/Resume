@@ -15,5 +15,9 @@
   "skills-description-one": "Editing images with Gimp",
   "skills-description-two": "Working with interface design in Figma",
 
-  "portfolio-description-header":"Here are a couple of group projects that I have had the pleasure of working on along with fellow students from Medieinstitutet"
+  "portfolio-description-header":"Here are a couple of group projects that I have had the pleasure of working on along with fellow students from Medieinstitutet",
+  "portfolio-bumpy-description-one": "Bumpy Monster was created for an assignment by myself and five other students where we used p5.js, TypeScript and worked with OOP.",
+  "portfolio-bumpy-description-two": "Learn more about the game or try it out by checking it out on GitHub or play the demo by clicking the links below",
+  "portfolio-GHEDb-description-one": "GHEDb was created for an assignment by myself and two other students where we used React, Typescript, worked with an API and used Styled-Components.",
+  "portfolio-GHEDb-description-two": "Learn more about the site or browse it for yourself by checking it out on GitHub or view the demo by clicking the links below"
 }

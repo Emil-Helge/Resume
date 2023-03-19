@@ -15,5 +15,9 @@
   "skills-description-two": "Arbeta med gränssnittsdesign i Figma",
 
 
-  "portfolio-description-header":"Här så finner ni ett par utvalda gruppprojekt som jag har haft nöjet att ta del utav och arbeta med tillsammans med mina klasskamraet från Medieinstitutet"
+  "portfolio-description-header":"Här är ett par utvalda gruppprojekt som jag har haft nöjet att ta del utav och arbeta med tillsammans med mina klasskamrater från Medieinstitutet",
+  "portfolio-bumpy-description-one": "Bumpy Monster skapades för en skoluppgift av mig och fem andra studenter där vi använde oss av p5.js, TypeScript och arbetade med OOP.",
+  "portfolio-bumpy-description-two": "Lär dig mer om spelet eller testa det genom att kolla igenom projektet på GitHub eller spela en demo av spelet genom att klicka på länkarna nedan.",
+  "portfolio-GHEDb-description-one": "GHEDb skapades för ett gruppprojekt av mig och två andra studenter där vi använde React, TypeScript, arbetade med ett API och använde oss av Styled-Components.",
+  "portfolio-GHEDb-description-two": "Lär dig mer om sajten eller kolla igenom projektet på GitHub eller ta dig en titt på demo-sidan genom att klicka på länkarna nedan."
 }
