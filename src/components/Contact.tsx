@@ -18,9 +18,7 @@ function Contact() {
           alt="Picture of me"
           className="w-44 border-y-2 rounded-full border-[#00d1ce4f]"
         />
-        <p className="text-center max-w-xl scroll-animation-hidden">
-          {t('contact-text')}
-        </p>
+        <p className="text-center max-w-xl">{t('contact-text')}</p>
         <div className="icon-container w-full flex gap-4 justify-center mt-3 mb-7">
           <a
             href="https://www.linkedin.com/in/emil-helgesson94/"

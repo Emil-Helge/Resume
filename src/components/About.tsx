@@ -17,12 +17,8 @@ function About() {
           className="w-40"
         />
         <h2 className="text-xl font-mono font-extrabold">{t('front-end')}</h2>
-        <p className="md:w-2/3  scroll-animation-hidden">
-          {t('about-text-one')}
-        </p>
-        <p className="md:w-2/3  scroll-animation-hidden">
-          {t('about-text-two')}
-        </p>
+        <p className="md:w-2/3">{t('about-text-one')}</p>
+        <p className="md:w-2/3">{t('about-text-two')}</p>
       </div>
       <HrAnimation width="66%" />
     </>
