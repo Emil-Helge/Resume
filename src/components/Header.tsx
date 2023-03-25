@@ -62,10 +62,8 @@ function Header() {
           <li className="w-full">
             <a
               href="#About"
-              className={`rounded-xl p-2 border-[#00d1cd] ${
-                isMenuItemActive('About')
-                  ? ''
-                  : 'hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4]'
+              className={`rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]${
+                isMenuItemActive('About') ? '' : ' focus:bg-[#00d1ceb4]'
               } focus:outline-none w-full block md:inline text-center`}
               data-target="About"
               onClick={ScrollToId}
@@ -77,7 +75,9 @@ function Header() {
           <li className="w-full">
             <a
               href="#Education"
-              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center"
+              className={`rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]${
+                isMenuItemActive('Education') ? '' : ' focus:bg-[#00d1ceb4]'
+              } focus:outline-none w-full block md:inline text-center`}
               data-target="Education"
               onClick={ScrollToId}
               onKeyDown={handleKeyDown}
@@ -88,7 +88,9 @@ function Header() {
           <li className="w-full">
             <a
               href="#Skills"
-              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center"
+              className={`rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]${
+                isMenuItemActive('Skills') ? '' : ' focus:bg-[#00d1ceb4]'
+              } focus:outline-none w-full block md:inline text-center`}
               data-target="Skills"
               onClick={ScrollToId}
               onKeyDown={handleKeyDown}
@@ -99,7 +101,9 @@ function Header() {
           <li className="w-full">
             <a
               href="#Portfolio"
-              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center"
+              className={`rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]${
+                isMenuItemActive('Portfolio') ? '' : ' focus:bg-[#00d1ceb4]'
+              } focus:outline-none w-full block md:inline text-center`}
               data-target="Portfolio"
               onClick={ScrollToId}
               onKeyDown={handleKeyDown}
@@ -110,7 +114,9 @@ function Header() {
           <li className="w-full">
             <a
               href="#Contact"
-              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center"
+              className={`rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]${
+                isMenuItemActive('Contact') ? '' : ' focus:bg-[#00d1ceb4]'
+              } focus:outline-none w-full block md:inline text-center`}
               data-target="Contact"
               onClick={ScrollToId}
               onKeyDown={handleKeyDown}
