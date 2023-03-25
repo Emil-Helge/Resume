@@ -5,6 +5,7 @@ import LanguageToggle from './LanguageToggleBtn';
 function Header() {
   const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [burgerMenuFocusedByTab, setBurgerMenuFocusedByTab] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -27,6 +28,14 @@ function Header() {
     }
   };
 
+  const handleBurgerMenuTab = (
+    event: React.KeyboardEvent<HTMLButtonElement>
+  ) => {
+    if (event.key === 'Tab') {
+      setBurgerMenuFocusedByTab(true);
+    }
+  };
+
   return (
     <header className="overflow-y-hidden text-white py-2 px-4 ">
       <LanguageToggle />
@@ -34,10 +43,14 @@ function Header() {
         <div className="text-3xl md:hidden">
           <button
             onClick={toggleMenu}
-            className="burger-menu flex absolute top-0 right-0 p-2"
-          >
-            <i className="fa-solid fa-bars h-7"></i>
-          </button>
+            onKeyUp={handleBurgerMenuTab}
+            onBlur={() => setBurgerMenuFocusedByTab(false)}
+            className={`flex absolute top-0 right-0 p-2 fa-solid fa-bars h-7 ${
+              burgerMenuFocusedByTab
+                ? 'focus:text-[#00d1ceb4] focus:outline-none'
+                : 'focus:outline-none'
+            }`}
+          />
         </div>
         <ul
           className={`flex flex-col text-xl font-extrabold items-center mt-12 gap-5 ${
