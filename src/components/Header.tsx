@@ -37,7 +37,7 @@ function Header() {
   };
 
   return (
-    <header className="overflow-y-hidden text-white py-2 px-4 ">
+    <header className="overflow-y-hidden text-white py-2 px-4 w-full md:w-auto">
       <LanguageToggle />
       <nav className="p-0 m-0">
         <div className="text-3xl md:hidden">
@@ -57,10 +57,10 @@ function Header() {
             menuOpen ? '' : 'hidden'
           } md:flex md:flex-row  md:mt-0`}
         >
-          <li>
+          <li className="w-full">
             <a
               href="#About"
-              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-screen block md:inline text-center"
+              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center"
               data-target="About"
               onClick={ScrollToId}
               onKeyDown={handleKeyDown}
@@ -68,10 +68,10 @@ function Header() {
               {t('about-title')}
             </a>
           </li>
-          <li>
+          <li className="w-full">
             <a
               href="#Education"
-              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-screen block md:inline text-center"
+              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center"
               data-target="Education"
               onClick={ScrollToId}
               onKeyDown={handleKeyDown}
@@ -79,10 +79,10 @@ function Header() {
               {t('education-title')}
             </a>
           </li>
-          <li>
+          <li className="w-full">
             <a
               href="#Skills"
-              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-screen block md:inline text-center"
+              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center"
               data-target="Skills"
               onClick={ScrollToId}
               onKeyDown={handleKeyDown}
@@ -90,10 +90,10 @@ function Header() {
               {t('skills-title')}
             </a>
           </li>
-          <li>
+          <li className="w-full">
             <a
               href="#Portfolio"
-              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-screen block md:inline text-center"
+              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center"
               data-target="Portfolio"
               onClick={ScrollToId}
               onKeyDown={handleKeyDown}
@@ -101,10 +101,10 @@ function Header() {
               {t('portfolio-title')}
             </a>
           </li>
-          <li>
+          <li className="w-full">
             <a
               href="#Contact"
-              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-screen block md:inline text-center"
+              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center"
               data-target="Contact"
               onClick={ScrollToId}
               onKeyDown={handleKeyDown}
