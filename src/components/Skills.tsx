@@ -42,32 +42,28 @@ function Skills() {
   return (
     <>
       <style>{keyframes}</style>
-      <div ref={ref}>
-        <div id="Skills" className="flex flex-col text-right pr-5 gap-5">
-          <h1 className="text-4xl font-mono font-extrabold mb-2 first-letter:text-[#00d1cd]">
-            {t('skills-title')}
-          </h1>
-          {skillsData.map(({ label }) => (
-            <div key={label} className="self-end">
-              <div>{label.replace(/-and-/g, ' & ')}</div>
-              <div className="flex bg-slate-700 border-r-[0.1rem] border-[#00d1cd] rounded-lg h-10 w-60">
-                <div
-                  className={`  h-10  bg-gray-300 rounded-lg ${
-                    animationApplied ? label : ''
-                  }`}
-                />
-              </div>
+      <div id="Skills" className="flex flex-col text-right pr-5 gap-5 pt-20">
+        <h1 className="text-4xl font-mono font-extrabold mb-2 first-letter:text-[#00d1cd]">
+          {t('skills-title')}
+        </h1>
+        {skillsData.map(({ label }) => (
+          <div ref={ref} key={label} className="self-end">
+            <div>{label.replace(/-and-/g, ' & ')}</div>
+            <div className="flex bg-slate-700 border-r-[0.1rem] border-[#00d1cd] rounded-lg h-10 w-60">
+              <div
+                className={`  h-10  bg-gray-300 rounded-lg ${
+                  animationApplied ? label : ''
+                }`}
+              />
             </div>
-          ))}
-          <h4 className="text-2xl font-bold">
-            {t('skills-description-header')}
-          </h4>
-          <p className="text-lg">
-            {t('skills-description-one')}
-            <br />
-            {t('skills-description-two')}
-          </p>
-        </div>
+          </div>
+        ))}
+        <h4 className="text-2xl font-bold">{t('skills-description-header')}</h4>
+        <p className="text-lg">
+          {t('skills-description-one')}
+          <br />
+          {t('skills-description-two')}
+        </p>
       </div>
     </>
   );

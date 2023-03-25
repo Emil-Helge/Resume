@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import HrAnimation from './HrAnimation';
 
 function Education() {
   const { t } = useTranslation();
@@ -24,7 +23,6 @@ function Education() {
           </div>
         </div>
       </div>
-      <HrAnimation width="33%" />
     </>
   );
 }
