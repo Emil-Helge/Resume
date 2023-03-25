@@ -13,6 +13,7 @@ function Header() {
 
   const ScrollToId = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
+    event.currentTarget.blur();
     const targetId = event.currentTarget.dataset.target as string;
     const targetElement = document.getElementById(targetId) as HTMLElement;
     window.scrollTo({
@@ -24,6 +25,7 @@ function Header() {
   const handleKeyDown = (event: React.KeyboardEvent<HTMLAnchorElement>) => {
     if (event.key === ' ' || event.key === 'Spacebar') {
       event.preventDefault();
+      event.currentTarget.blur();
       ScrollToId(event as any);
     }
   };

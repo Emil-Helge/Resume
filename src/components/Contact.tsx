@@ -10,6 +10,7 @@ function Contact() {
   ) => {
     if (event.key === ' ' || event.key === 'Spacebar') {
       event.preventDefault();
+      event.currentTarget.blur();
       window.open(url, '_blank', 'noopener noreferrer');
     }
   };
