@@ -37,10 +37,6 @@ function Header() {
     }
   };
 
-  const handleBlur = () => {
-    setActiveMenuItem(null);
-  };
-
   const isMenuItemActive = (itemId: string) => activeMenuItem === itemId;
   return (
     <header className="overflow-y-hidden text-white py-2 px-4 w-full md:w-auto">
@@ -71,7 +67,6 @@ function Header() {
               } focus:outline-none w-full block md:inline text-center`}
               data-target="About"
               onClick={ScrollToId}
-              onBlur={handleBlur}
               onKeyDown={handleKeyDown}
             >
               {t('about-title')}
