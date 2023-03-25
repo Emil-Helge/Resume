@@ -30,7 +30,6 @@ function PortfolioCard({
 
       <div className="bg-slate-900 min-h-[23rem] flex flex-col place-content-between rounded-2xl ">
         <p className=" px-3 mt-3">{firstDescription}</p>
-        <hr className="border-[#00d1cd] mx-2" />
         <p className=" px-3">{secondDescription}</p>
         <div className="flex place-content-between p-3">
           <a

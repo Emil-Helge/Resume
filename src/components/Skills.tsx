@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import HrAnimation from './HrAnimation';
 import useInView from './useInView';
 
 function Skills() {
@@ -44,8 +43,6 @@ function Skills() {
     <>
       <style>{keyframes}</style>
       <div ref={ref}>
-        {' '}
-        {/* Attach the ref to this wrapping div */}
         <div id="Skills" className="flex flex-col text-right pr-5 gap-5">
           <h1 className="text-4xl font-mono font-extrabold mb-2 first-letter:text-[#00d1cd]">
             {t('skills-title')}
@@ -72,7 +69,6 @@ function Skills() {
           </p>
         </div>
       </div>
-      <HrAnimation width="50%" />
     </>
   );
 }

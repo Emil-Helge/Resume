@@ -11,8 +11,8 @@ function App() {
       <Header />
       <div className="max-w-screen-xl">
         <About />
-        <Skills />
         <Education />
+        <Skills />
         <Portfolio />
         <Contact />
       </div>
