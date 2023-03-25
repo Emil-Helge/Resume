@@ -20,8 +20,16 @@ function Header() {
     });
   };
 
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLAnchorElement>) => {
+    if (event.key === ' ' || event.key === 'Spacebar') {
+      event.preventDefault();
+      ScrollToId(event as any);
+    }
+  };
+
   return (
     <header className="overflow-y-hidden text-white py-2 px-4 ">
+      <LanguageToggle />
       <nav className="p-0 m-0">
         <div className="text-3xl md:hidden">
           <button
@@ -39,9 +47,10 @@ function Header() {
           <li>
             <a
               href="#About"
-              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] w-screen block md:inline text-center"
+              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-screen block md:inline text-center"
               data-target="About"
               onClick={ScrollToId}
+              onKeyDown={handleKeyDown}
             >
               {t('about-title')}
             </a>
@@ -49,9 +58,10 @@ function Header() {
           <li>
             <a
               href="#Education"
-              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] w-screen block md:inline text-center"
+              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-screen block md:inline text-center"
               data-target="Education"
               onClick={ScrollToId}
+              onKeyDown={handleKeyDown}
             >
               {t('education-title')}
             </a>
@@ -59,9 +69,10 @@ function Header() {
           <li>
             <a
               href="#Skills"
-              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] w-screen block md:inline text-center"
+              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-screen block md:inline text-center"
               data-target="Skills"
               onClick={ScrollToId}
+              onKeyDown={handleKeyDown}
             >
               {t('skills-title')}
             </a>
@@ -69,9 +80,10 @@ function Header() {
           <li>
             <a
               href="#Portfolio"
-              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] w-screen block md:inline text-center"
+              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-screen block md:inline text-center"
               data-target="Portfolio"
               onClick={ScrollToId}
+              onKeyDown={handleKeyDown}
             >
               {t('portfolio-title')}
             </a>
@@ -79,16 +91,16 @@ function Header() {
           <li>
             <a
               href="#Contact"
-              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] w-screen block md:inline text-center"
+              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-screen block md:inline text-center"
               data-target="Contact"
               onClick={ScrollToId}
+              onKeyDown={handleKeyDown}
             >
               {t('contact-title')}
             </a>
           </li>
         </ul>
       </nav>
-      <LanguageToggle />
     </header>
   );
 }

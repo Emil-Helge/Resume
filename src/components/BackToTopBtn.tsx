@@ -27,7 +27,7 @@ function BackToTopBtn() {
       {showBackToTop && (
         <button
           onClick={handleBackToTop}
-          className="fixed z-50 xl:bottom-16 xl:right-7 bottom-5 right-4 p-3 opacity-50 hover:opacity-100 hover:text-[#00d1cd] transition duration-500 ease-in-out transform hover:animate-wiggle"
+          className="fixed z-50 xl:bottom-16 xl:right-7 bottom-5 right-4 p-3 opacity-50 hover:opacity-100 hover:text-[#00d1cd] focus:text-[#00d1ceb4] focus:outline-none focus:opacity-100 transition duration-500 ease-in-out transform hover:animate-wiggle focus:animate-wiggle"
         >
           <i className="fa-solid fa-arrow-up fa-xl"></i>
         </button>

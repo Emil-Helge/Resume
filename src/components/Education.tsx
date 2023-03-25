@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import BackToTopBtn from './BackToTopBtn';
 import HrAnimation from './HrAnimation';
 
 function Education() {
@@ -24,7 +23,6 @@ function Education() {
             <p>2022-2024</p>
           </div>
         </div>
-        <BackToTopBtn />
       </div>
       <HrAnimation width="33%" />
     </>

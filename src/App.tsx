@@ -1,4 +1,5 @@
 import About from './components/About';
+import BackToTopBtn from './components/BackToTopBtn';
 import Contact from './components/Contact';
 import Education from './components/Education';
 import Header from './components/Header';
@@ -15,6 +16,7 @@ function App() {
         <Skills />
         <Portfolio />
         <Contact />
+        <BackToTopBtn />
       </div>
     </div>
   );

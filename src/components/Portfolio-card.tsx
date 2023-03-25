@@ -17,10 +17,21 @@ function PortfolioCard({
   demoUrl,
   demoIcon,
 }: Props) {
+  const handleKeyDown = (
+    event: React.KeyboardEvent<HTMLAnchorElement>,
+    url: string
+  ) => {
+    if (event.key === ' ' || event.key === 'Spacebar') {
+      event.preventDefault();
+      window.open(url, '_blank', 'noopener noreferrer');
+    }
+  };
+
   return (
     <div className="max-w-xs flex flex-col gap-3 text-center">
       <a
         href={demoUrl}
+        onKeyDown={(event) => handleKeyDown(event, demoUrl)}
         target="_blank"
         rel="noopener noreferrer"
         className="rounded-2xl h-full drop-shadow-[0_0_0.15rem_rgba(0,209,205,0.5)]"
@@ -34,15 +45,17 @@ function PortfolioCard({
         <div className="flex place-content-between p-3">
           <a
             href={githubUrl}
+            onKeyDown={(event) => handleKeyDown(event, githubUrl)}
             target="_blank"
             rel="noopener noreferrer"
-            className="fa-brands fa-square-github fa-3x opacity-60 hover:opacity-100 hover:text-[#00d1cd]"
+            className="fa-brands fa-square-github fa-3x opacity-60 hover:opacity-100 hover:text-[#00d1cd] focus:text-[#00d1ceb4] focus:outline-none focus:opacity-100"
           />
           <a
             href={demoUrl}
+            onKeyDown={(event) => handleKeyDown(event, demoUrl)}
             target="_blank"
             rel="noopener noreferrer"
-            className={`fa-3x opacity-60 hover:opacity-100 hover:text-[#00d1cd] ${demoIcon}`}
+            className={`fa-3x opacity-60 hover:opacity-100 hover:text-[#00d1cd] ${demoIcon} focus:text-[#00d1ceb4] focus:outline-none focus:opacity-100`}
           />
         </div>
       </div>
