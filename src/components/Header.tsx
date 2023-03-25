@@ -6,26 +6,25 @@ function Header() {
   const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [burgerMenuFocusedByTab, setBurgerMenuFocusedByTab] = useState(false);
-
+  const [activeMenuItem, setActiveMenuItem] = useState<string | null>(null);
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
   const ScrollToId = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
-    event.currentTarget.blur();
     const targetId = event.currentTarget.dataset.target as string;
     const targetElement = document.getElementById(targetId) as HTMLElement;
     window.scrollTo({
       behavior: 'smooth',
       top: targetElement.offsetTop,
     });
+    setActiveMenuItem(targetId);
   };
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLAnchorElement>) => {
     if (event.key === ' ' || event.key === 'Spacebar') {
       event.preventDefault();
-      event.currentTarget.blur();
       ScrollToId(event as any);
     }
   };
@@ -38,6 +37,7 @@ function Header() {
     }
   };
 
+  const isMenuItemActive = (itemId: string) => activeMenuItem === itemId;
   return (
     <header className="overflow-y-hidden text-white py-2 px-4 w-full md:w-auto">
       <LanguageToggle />
@@ -62,7 +62,11 @@ function Header() {
           <li className="w-full">
             <a
               href="#About"
-              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center"
+              className={`rounded-xl p-2 border-[#00d1cd] ${
+                isMenuItemActive('About')
+                  ? ''
+                  : 'hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4]'
+              } focus:outline-none w-full block md:inline text-center`}
               data-target="About"
               onClick={ScrollToId}
               onKeyDown={handleKeyDown}
