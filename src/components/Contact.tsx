@@ -18,7 +18,7 @@ function Contact() {
     <>
       <div
         id="Contact"
-        className="flex flex-col pl-5 pr-5 pt-5 gap-3 items-center"
+        className="flex flex-col pl-5 pr-5 pt-20 gap-3 items-center"
       >
         <h1 className="text-4xl text-center font-mono font-extrabold mb-2 first-letter:text-[#00d1cd]">
           {t('contact-title')}

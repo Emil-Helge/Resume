@@ -10,7 +10,7 @@ function Portfolio() {
     <>
       <div
         id="Portfolio"
-        className="flex flex-col pl-5 pr-5 pt-5 gap-3 text-lg text-center"
+        className="flex flex-col pl-5 pr-5 pt-20 gap-3 text-lg text-center"
       >
         <h1 className="text-4xl font-mono font-extrabold mb-2 first-letter:text-[#00d1cd]">
           {t('portfolio-title')}
