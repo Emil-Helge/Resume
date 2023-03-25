@@ -48,22 +48,22 @@ function Header() {
           </li>
           <li>
             <a
-              href="#Skills"
-              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] w-screen block md:inline text-center"
-              data-target="Skills"
-              onClick={ScrollToId}
-            >
-              {t('skills-title')}
-            </a>
-          </li>
-          <li>
-            <a
               href="#Education"
               className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] w-screen block md:inline text-center"
               data-target="Education"
               onClick={ScrollToId}
             >
               {t('education-title')}
+            </a>
+          </li>
+          <li>
+            <a
+              href="#Skills"
+              className="rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] w-screen block md:inline text-center"
+              data-target="Skills"
+              onClick={ScrollToId}
+            >
+              {t('skills-title')}
             </a>
           </li>
           <li>
