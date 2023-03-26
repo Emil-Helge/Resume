@@ -14,7 +14,7 @@ function LanguageToggle() {
     <div className="absolute top-0 left-0 font-extrabold text-lg">
       <button
         ref={buttonRef}
-        className={`flex gap-2 place-items-center rounded-xl p-2  hover:bg-[#00d1ceb4] active:bg-[#00d1ceb4] active:outline-none`}
+        className={`flex gap-2 place-items-center rounded-xl p-2 active:bg-none hover:bg-[#00d1ceb4] sm:active:bg-[#00d1ceb4]  sm:active:outline-none`}
         onClick={() => changeLanguage(currentLanguage === 'en' ? 'sv' : 'en')}
         title={currentLanguage === 'en' ? 'Byt språk' : 'Change language'}
       >
