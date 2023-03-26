@@ -7,7 +7,10 @@ function About() {
 
   return (
     <>
-      <div id="About" className="flex flex-col pl-5 pr-5 pt-5 gap-3 text-lg">
+      <div
+        id="About"
+        className="flex flex-col pl-5 pr-5 pt-5 gap-3 text-lg w-fit md:w-2/3"
+      >
         <h1 className="text-4xl font-mono font-extrabold mb-2 pt-7 md:pt-0 first-letter:text-[#00d1cd]">
           {t('about-header')}
         </h1>
@@ -17,10 +20,10 @@ function About() {
           className="w-40"
         />
         <h2 className="text-xl font-mono font-extrabold">{t('front-end')}</h2>
-        <p className="md:w-2/3">{t('about-text-one')}</p>
-        <p className="md:w-2/3">{t('about-text-two')}</p>
+        <p>{t('about-text-one')}</p>
+        <p>{t('about-text-two')}</p>
+        <HrAnimation width="100%" />
       </div>
-      <HrAnimation width="66%" />
     </>
   );
 }
