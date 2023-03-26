@@ -27,7 +27,7 @@ function HrAnimation({ width }: HrAnimationProps) {
   return (
     <hr
       ref={hrRef}
-      className={`mt-11 mb-11 xl:w-full h-[0.1rem] bg-gradient-to-r from-transparent via-[#00d1cd]  border-none`}
+      className={`mt-11 xl:w-full h-[0.1rem] bg-gradient-to-r from-transparent via-[#00d1cd]  border-none`}
       style={{ width: '0%' }}
     />
   );
