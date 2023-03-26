@@ -18,7 +18,7 @@ function LanguageToggle() {
   };
 
   return (
-    <div className="absolute top-1 left-1 font-extrabold text-lg border border-slate-800 p-1 rounded-full">
+    <div className="absolute top-2 left-2 font-extrabold text-lg">
       <button
         ref={buttonRef}
         className={`flex gap-2 place-items-center active:text-[#00d1ce] active:bg-none focus:bg-none ${
