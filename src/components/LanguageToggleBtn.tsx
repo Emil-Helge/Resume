@@ -21,7 +21,7 @@ function LanguageToggle() {
     <div className="absolute top-0 left-0 font-extrabold text-lg">
       <button
         ref={buttonRef}
-        className={`flex gap-2 place-items-center rounded-xl p-2 active:text-[#00d1ceb4] focus:bg-none ${
+        className={`flex gap-2 place-items-center rounded-xl p-2 active:text-[#00d1ceb4] active:bg-none focus:bg-none ${
           btnFocusedByTab
             ? 'focus:text-[#00d1ceb4] focus:outline-none'
             : 'focus:outline-none'
