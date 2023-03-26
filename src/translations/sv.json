@@ -7,7 +7,7 @@
 
   "about-header": "Om Mig",
   "front-end": "Front End Utvecklare Student",
-  "about-text-one":"Jag studerar just nu ett tvåårigt program på Medieinstitutet i Göteborg och strävar efter att få jobba som Front End Utvecklare inom de kommande åren. Jag har haft ett geniunt intresse för webbutveckling i nästan tio år och jag är väldigt ivrig att få applicera all min passion för området och börja lära mig allt som har med yrket att göra. Jag har ett starkt driv för att ständigt lära mig och uppleva nya saker.",
+  "about-text-one":"Jag studerar just nu ett tvåårigt program på Medieinstitutet i Göteborg och strävar efter att få jobba som Front End-utvecklare inom de kommande åren. Jag har haft ett genuint intresse för webbutveckling i nästan tio år och är väldigt ivrig att få applicera all min passion för området och börja lära mig allt som har med yrket att göra. Dessutom har jag ett starkt driv för att ständigt lära mig och uppleva nya saker, vare sig det handlar om nya ämnen inom studierna eller nya och spännande aktiviteter på fritiden så är jag öppen för det.",
   "about-text-two": "Mitt mål är att hålla mig uppdaterad med de vanligaste förekommande ramverken som bland annat React, Angular & Vue för att kunna anpassa och utrusta mig för nya projekt så väl som möjligt.",
 
   "skills-description-header": "Ytterligare färdigheter inkluderar",
@@ -21,5 +21,5 @@
   "portfolio-GHEDb-description-one": "GHEDb skapades för ett gruppprojekt av mig och två andra studenter där vi använde React, TypeScript, arbetade med ett API och använde oss av Styled-Components.",
   "portfolio-GHEDb-description-two": "Lär dig mer om sajten eller kolla igenom projektet på GitHub eller ta dig en titt på demo-sidan genom att klicka på länkarna nedan.",
 
-  "contact-text": "Om du skulle vilja komma i kontakt med mig eller lära dig mer om mig så kan du besöka min LinkedIn sida eller skicka ett meddelande till mig genom att klicka på ikonerna nedan. Dessutom så, om du är nyfiken på fler av mina tidigare projekt och se vad jag håller på att arbeta med just nu så kan du också besöka min GitHub sida."
+  "contact-text": "Om du skulle vilja komma i kontakt med mig eller lära dig mer om mig kan du besöka min LinkedIn-sida eller skicka ett meddelande till mig genom att klicka på ikonerna nedan. Dessutom, om du är nyfiken på fler av mina tidigare projekt och vill veta vad jag arbetar med just nu, kan du också besöka min GitHub-sida."
 }

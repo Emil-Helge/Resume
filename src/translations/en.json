@@ -7,7 +7,7 @@
 
   "about-header": "About Me",
   "front-end": "Front End Developer Student",
-  "about-text-one":"I am currently studying a two year program at Medieinstitutet in Gothenburg and aspiring to get to work as a Front End Developer in the coming years. I have had a genuine interest for web development for almost a decade now and I am very eager to get to put all of my passion into practice and start to learn all the ins and outs that comes with the territory. I have a strong drive to learn and experience new things.",
+  "about-text-one":"I am currently enrolled in a two-year program at Medieinstitutet in Gothenburg, aiming to work as a Front-End Developer in the coming years. I have had a genuine interest in web development for almost a decade and am eager to put my passion into practice and learn all the ins and outs that come with the territory. I also have a strong drive to continually learn and experience new things. Whether it is about new subjects in my studies or new and exciting activities in my spare time, I am open to it.",
   "about-text-two": "I aspire to be up to date and familiar with the most frequently occuring frameworks such as React, Angular & Vue in order to be able to adapt and adjust accordingly.",
   "skills-header": "Skills",
   
@@ -21,5 +21,5 @@
   "portfolio-GHEDb-description-one": "GHEDb was created for an assignment by myself and two other students where we used React, Typescript, worked with an API and used Styled-Components.",
   "portfolio-GHEDb-description-two": "Learn more about the site or browse it for yourself by checking it out on GitHub or view the demo by clicking the links below",
 
-  "contact-text": "If you would like to get in touch with me or learn more about me you can visit my LinkedIn page or send me an email by clicking the icons below. Additionally, if you are curious about more of my previous projects and want to know what I am currently working on you can also visit my GitHub page."
+  "contact-text": "If you would like to get in touch with me or learn more about me, you can visit my LinkedIn page or send me an email by clicking the icons below. Additionally, if you are curious about more of my previous projects and want to know what I am currently working on, you can also visit my GitHub page."
 }
