@@ -18,23 +18,21 @@ function LanguageToggle() {
   };
 
   return (
-    <div className="absolute top-2 left-2 font-extrabold text-lg">
-      <button
-        ref={buttonRef}
-        className={`flex gap-2 place-items-center select-none active:text-[#00d1ce] active:bg-transparent focus:bg-none focus:ring-0 ${
-          btnFocusedByTab
-            ? 'focus:text-[#00d1ce] focus:outline-none'
-            : 'focus:outline-none'
-        }`}
-        onClick={() => changeLanguage(currentLanguage === 'en' ? 'sv' : 'en')}
-        onKeyUp={handleBtnTab}
-        onBlur={() => setBtnFocusedByTab(false)}
-        title={currentLanguage === 'en' ? 'Byt språk' : 'Change language'}
-      >
-        <i className="fa-solid fa-earth-europe fa-lg" />
-        {currentLanguage === 'en' ? 'SV' : 'EN'}
-      </button>
-    </div>
+    <button
+      ref={buttonRef}
+      className={`absolute top-2 left-2 font-extrabold text-lg flex gap-2 place-items-center select-none active:text-[#00d1ce] active:bg-slate-800  ${
+        btnFocusedByTab
+          ? 'focus:text-[#00d1ce] focus:outline-none'
+          : 'focus:outline-none'
+      }`}
+      onClick={() => changeLanguage(currentLanguage === 'en' ? 'sv' : 'en')}
+      onKeyUp={handleBtnTab}
+      onBlur={() => setBtnFocusedByTab(false)}
+      title={currentLanguage === 'en' ? 'Byt språk' : 'Change language'}
+    >
+      <i className="fa-solid fa-earth-europe fa-lg" />
+      {currentLanguage === 'en' ? 'SV' : 'EN'}
+    </button>
   );
 }
 
