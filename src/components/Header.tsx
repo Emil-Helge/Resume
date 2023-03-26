@@ -6,7 +6,6 @@ function Header() {
   const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [burgerMenuFocusedByTab, setBurgerMenuFocusedByTab] = useState(false);
-  const [activeMenuItem, setActiveMenuItem] = useState<string | null>(null);
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -24,7 +23,6 @@ function Header() {
       behavior: 'smooth',
       top: scrollPosition,
     });
-    setActiveMenuItem(targetId);
   };
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLAnchorElement>) => {
@@ -42,7 +40,6 @@ function Header() {
     }
   };
 
-  const isMenuItemActive = (itemId: string) => activeMenuItem === itemId;
   return (
     <header className="overflow-y-hidden text-white py-2 px-4 w-full md:w-auto">
       <LanguageToggle />
@@ -67,9 +64,7 @@ function Header() {
           <li className="w-full">
             <a
               href="#About"
-              className={`whitespace-nowrap rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]${
-                isMenuItemActive('About') ? '' : ' focus:bg-[#00d1ceb4]'
-              } focus:outline-none w-full block md:inline text-center`}
+              className={`whitespace-nowrap rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center`}
               data-target="About"
               onClick={ScrollToId}
               onKeyDown={handleKeyDown}
@@ -80,9 +75,7 @@ function Header() {
           <li className="w-full">
             <a
               href="#Education"
-              className={`rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]${
-                isMenuItemActive('Education') ? '' : ' focus:bg-[#00d1ceb4]'
-              } focus:outline-none w-full block md:inline text-center`}
+              className={`whitespace-nowrap rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center`}
               data-target="Education"
               onClick={ScrollToId}
               onKeyDown={handleKeyDown}
@@ -93,9 +86,7 @@ function Header() {
           <li className="w-full">
             <a
               href="#Skills"
-              className={`rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]${
-                isMenuItemActive('Skills') ? '' : ' focus:bg-[#00d1ceb4]'
-              } focus:outline-none w-full block md:inline text-center`}
+              className={`whitespace-nowrap rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center`}
               data-target="Skills"
               onClick={ScrollToId}
               onKeyDown={handleKeyDown}
@@ -106,9 +97,7 @@ function Header() {
           <li className="w-full">
             <a
               href="#Portfolio"
-              className={`rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]${
-                isMenuItemActive('Portfolio') ? '' : ' focus:bg-[#00d1ceb4]'
-              } focus:outline-none w-full block md:inline text-center`}
+              className={`whitespace-nowrap rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center`}
               data-target="Portfolio"
               onClick={ScrollToId}
               onKeyDown={handleKeyDown}
@@ -119,9 +108,7 @@ function Header() {
           <li className="w-full">
             <a
               href="#Contact"
-              className={`rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]${
-                isMenuItemActive('Contact') ? '' : ' focus:bg-[#00d1ceb4]'
-              } focus:outline-none w-full block md:inline text-center`}
+              className={`whitespace-nowrap rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center`}
               data-target="Contact"
               onClick={ScrollToId}
               onKeyDown={handleKeyDown}
