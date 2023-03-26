@@ -8,6 +8,9 @@ function LanguageToggle() {
 
   const changeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
+  };
+
+  const handlePointerUp = () => {
     buttonRef.current?.blur();
   };
 
@@ -17,6 +20,7 @@ function LanguageToggle() {
         ref={buttonRef}
         className={`flex gap-2 place-items-center rounded-xl p-2  hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none`}
         onClick={() => changeLanguage(currentLanguage === 'en' ? 'sv' : 'en')}
+        onPointerUp={handlePointerUp}
         title={currentLanguage === 'en' ? 'Byt språk' : 'Change language'}
       >
         <i className="fa-solid fa-earth-europe fa-lg" />
