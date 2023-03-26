@@ -13,11 +13,16 @@ function Header() {
 
   const ScrollToId = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
+    toggleMenu();
     const targetId = event.currentTarget.dataset.target as string;
     const targetElement = document.getElementById(targetId) as HTMLElement;
+
+    const ulElement = document.querySelector('ul') as HTMLElement;
+    const scrollPosition = targetElement.offsetTop - ulElement.offsetHeight;
+
     window.scrollTo({
       behavior: 'smooth',
-      top: targetElement.offsetTop,
+      top: scrollPosition,
     });
     setActiveMenuItem(targetId);
   };
