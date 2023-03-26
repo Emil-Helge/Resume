@@ -62,7 +62,7 @@ function Header() {
           <li className="w-full">
             <a
               href="#About"
-              className={`rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]${
+              className={`whitespace-nowrap rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4]${
                 isMenuItemActive('About') ? '' : ' focus:bg-[#00d1ceb4]'
               } focus:outline-none w-full block md:inline text-center`}
               data-target="About"
