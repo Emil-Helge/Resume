@@ -1,41 +1,21 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import useHandleButtonClick from '../hooks/useHandleButtonClick';
 import LanguageToggle from './LanguageToggleBtn';
 
 function Header() {
   const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [burgerMenuFocusedByTab, setBurgerMenuFocusedByTab] = useState(false);
+  const handleButtonClick = useHandleButtonClick(true);
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-  };
-
-  const ScrollToId = (
-    event:
-      | React.MouseEvent<HTMLAnchorElement>
-      | React.KeyboardEvent<HTMLAnchorElement>
-  ) => {
-    event.preventDefault();
-    const anchorElement = event.currentTarget as HTMLAnchorElement;
-    toggleMenu();
-    const targetId = anchorElement.dataset.target as string;
-    const targetElement = document.getElementById(targetId) as HTMLElement;
-
-    const ulElement = document.querySelector('ul') as HTMLElement;
-    const scrollPosition = targetElement.offsetTop - ulElement.offsetHeight;
-
-    window.scrollTo({
-      behavior: 'smooth',
-      top: scrollPosition,
-    });
-
-    anchorElement.blur();
   };
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLAnchorElement>) => {
     if (event.key === ' ' || event.key === 'Spacebar') {
       event.preventDefault();
-      ScrollToId(event as any);
     }
   };
 
@@ -73,8 +53,8 @@ function Header() {
               href="#About"
               className={`whitespace-nowrap rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center`}
               data-target="About"
-              onClick={ScrollToId}
-              onKeyDown={handleKeyDown}
+              onClick={handleButtonClick}
+              onKeyDown={handleButtonClick}
             >
               {t('about-title')}
             </a>
@@ -84,8 +64,8 @@ function Header() {
               href="#Education"
               className={`whitespace-nowrap rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center`}
               data-target="Education"
-              onClick={ScrollToId}
-              onKeyDown={handleKeyDown}
+              onClick={handleButtonClick}
+              onKeyDown={handleButtonClick}
             >
               {t('education-title')}
             </a>
@@ -95,8 +75,8 @@ function Header() {
               href="#Skills"
               className={`whitespace-nowrap rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center`}
               data-target="Skills"
-              onClick={ScrollToId}
-              onKeyDown={handleKeyDown}
+              onClick={handleButtonClick}
+              onKeyDown={handleButtonClick}
             >
               {t('skills-title')}
             </a>
@@ -106,8 +86,8 @@ function Header() {
               href="#Portfolio"
               className={`whitespace-nowrap rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center`}
               data-target="Portfolio"
-              onClick={ScrollToId}
-              onKeyDown={handleKeyDown}
+              onClick={handleButtonClick}
+              onKeyDown={handleButtonClick}
             >
               {t('portfolio-title')}
             </a>
@@ -117,8 +97,8 @@ function Header() {
               href="#Contact"
               className={`whitespace-nowrap rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center`}
               data-target="Contact"
-              onClick={ScrollToId}
-              onKeyDown={handleKeyDown}
+              onClick={handleButtonClick}
+              onKeyDown={handleButtonClick}
             >
               {t('contact-title')}
             </a>
