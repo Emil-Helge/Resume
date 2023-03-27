@@ -56,7 +56,7 @@ function Header() {
             onClick={toggleMenu}
             onKeyUp={handleBurgerMenuTab}
             onBlur={() => setBurgerMenuFocusedByTab(false)}
-            className={`flex absolute top-2 right-2 fa-solid fa-bars h-7 active:text-[#00d1ce] active:bg-transparent ${
+            className={`flex absolute top-2 right-2 fa-solid fa-bars h-7 active:text-[#00d1ce] active:bg-tap-transparent ${
               burgerMenuFocusedByTab
                 ? 'focus:text-[#00d1ce] focus:outline-none'
                 : 'focus:outline-none'
