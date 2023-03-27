@@ -6,4 +6,8 @@
   a, button {
     -webkit-tap-highlight-color: transparent;
   }
+
+  a::selection, button::selection {
+    background-color: transparent;
+  }
 }
