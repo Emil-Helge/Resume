@@ -44,7 +44,7 @@ function PortfolioCard({
             onKeyDown={handleKeyDown}
             target="_blank"
             rel="noopener noreferrer"
-            className="fa-brands fa-square-github fa-3x opacity-60 hover:opacity-100 hover:text-[#00d1cd] focus:text-[#00d1ceb4] focus:outline-none focus:opacity-100"
+            className="fa-brands fa-square-github fa-3x opacity-60 hover:opacity-100 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none"
           />
           <a
             href={demoUrl}
@@ -52,7 +52,7 @@ function PortfolioCard({
             onKeyDown={handleKeyDown}
             target="_blank"
             rel="noopener noreferrer"
-            className={`fa-3x opacity-60 hover:opacity-100 hover:text-[#00d1cd] ${demoIcon} focus:text-[#00d1ceb4] focus:outline-none focus:opacity-100`}
+            className={`fa-3x opacity-60 hover:opacity-100  ${demoIcon} active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none`}
           />
         </div>
       </div>

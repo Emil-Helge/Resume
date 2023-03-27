@@ -28,7 +28,7 @@ function Contact() {
             onKeyDown={handleKeyDown}
             target="_blank"
             id="linkedinIcon"
-            className="fa-brands fa-linkedin fa-3x opacity-60 hover:opacity-100 hover:text-[#00d1cd] focus:text-[#00d1ceb4] focus:outline-none focus:opacity-100"
+            className="fa-brands fa-linkedin fa-3x opacity-60 hover:opacity-100 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none"
           ></a>
           <a
             href="https://github.com/Emil-Helge"
@@ -36,7 +36,7 @@ function Contact() {
             onKeyDown={handleKeyDown}
             target="_blank"
             id="githubIcon"
-            className="fa-brands fa-square-github fa-3x opacity-60 hover:opacity-100 hover:text-[#00d1cd] focus:text-[#00d1ceb4] focus:outline-none focus:opacity-100"
+            className="fa-brands fa-square-github fa-3x opacity-60 hover:opacity-100 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none"
           ></a>
           <a
             href="mailto:emil.helgesson@medieinstitutet.se"
@@ -44,7 +44,7 @@ function Contact() {
             onKeyDown={handleKeyDown}
             target="_blank"
             id="emailIcon"
-            className="fa-solid fa-square-envelope fa-3x opacity-60 hover:opacity-100 hover:text-[#00d1cd] focus:text-[#00d1ceb4] focus:outline-none focus:opacity-100"
+            className="fa-solid fa-square-envelope fa-3x opacity-60 hover:opacity-100 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none "
           ></a>
         </div>
       </div>
