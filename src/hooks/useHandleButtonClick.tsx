@@ -42,7 +42,17 @@ const useHandleButtonClick = (
     [handleButtonClick]
   );
 
-  return { handleButtonClick, handleKeyDown };
+  const handleTouchEnd = useCallback(
+    (event: React.TouchEvent<HTMLAnchorElement | HTMLButtonElement>) => {
+      const buttonElement = event.currentTarget as
+        | HTMLAnchorElement
+        | HTMLButtonElement;
+      buttonElement.blur();
+    },
+    []
+  );
+
+  return { handleButtonClick, handleKeyDown, handleTouchEnd };
 };
 
 export default useHandleButtonClick;
