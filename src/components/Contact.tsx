@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import useHandleButtonClick from '../hooks/useHandleButtonClick';
 import selfie from '../images/Selfie.jpg';
@@ -5,6 +6,15 @@ import selfie from '../images/Selfie.jpg';
 function Contact() {
   const { t } = useTranslation();
   const { handleButtonClick, handleKeyDown } = useHandleButtonClick();
+  const [elementFocusedByTab, setElementFocusedByTab] = useState(false);
+
+  const handleElementFocusedByTab = (
+    event: React.KeyboardEvent<HTMLAnchorElement>
+  ) => {
+    if (event.key === 'Tab') {
+      setElementFocusedByTab(true);
+    }
+  };
 
   return (
     <>
@@ -26,25 +36,43 @@ function Contact() {
             href="https://www.linkedin.com/in/emil-helgesson94/"
             onClick={handleButtonClick}
             onKeyDown={handleKeyDown}
+            onKeyUp={handleElementFocusedByTab}
+            onBlur={() => setElementFocusedByTab(false)}
             target="_blank"
             id="linkedinIcon"
-            className="fa-brands fa-linkedin fa-3x opacity-60 hover:opacity-100 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none"
+            className={`fa-brands fa-linkedin fa-3x opacity-80 active:text-[#00d1ce] active:bg-tap-transparent ${
+              elementFocusedByTab
+                ? 'focus:text-[#00d1ce] focus:outline-none'
+                : 'focus:outline-none'
+            }`}
           ></a>
           <a
             href="https://github.com/Emil-Helge"
             onClick={handleButtonClick}
             onKeyDown={handleKeyDown}
+            onKeyUp={handleElementFocusedByTab}
+            onBlur={() => setElementFocusedByTab(false)}
             target="_blank"
             id="githubIcon"
-            className="fa-brands fa-square-github fa-3x opacity-60 hover:opacity-100 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none"
+            className={`fa-brands fa-square-github fa-3x opacity-80 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none ${
+              elementFocusedByTab
+                ? 'focus:text-[#00d1ce] focus:outline-none'
+                : 'focus:outline-none'
+            }`}
           ></a>
           <a
             href="mailto:emil.helgesson@medieinstitutet.se"
             onClick={handleButtonClick}
             onKeyDown={handleKeyDown}
+            onKeyUp={handleElementFocusedByTab}
+            onBlur={() => setElementFocusedByTab(false)}
             target="_blank"
             id="emailIcon"
-            className="fa-solid fa-square-envelope fa-3x opacity-60 hover:opacity-100 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none "
+            className={`fa-solid fa-square-envelope fa-3x opacity-80 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none ${
+              elementFocusedByTab
+                ? 'focus:text-[#00d1ce] focus:outline-none'
+                : 'focus:outline-none'
+            }`}
           ></a>
         </div>
       </div>

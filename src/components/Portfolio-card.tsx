@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import useHandleButtonClick from '../hooks/useHandleButtonClick';
 
 interface Props {
@@ -20,6 +21,15 @@ function PortfolioCard({
   demoIcon,
 }: Props) {
   const { handleButtonClick, handleKeyDown } = useHandleButtonClick();
+  const [elementFocusedByTab, setElementFocusedByTab] = useState(false);
+
+  const handleElementFocusedByTab = (
+    event: React.KeyboardEvent<HTMLAnchorElement>
+  ) => {
+    if (event.key === 'Tab') {
+      setElementFocusedByTab(true);
+    }
+  };
 
   return (
     <div className="max-w-xs flex flex-col gap-3 text-center">
@@ -42,17 +52,29 @@ function PortfolioCard({
             href={githubUrl}
             onClick={handleButtonClick}
             onKeyDown={handleKeyDown}
+            onKeyUp={handleElementFocusedByTab}
+            onBlur={() => setElementFocusedByTab(false)}
             target="_blank"
             rel="noopener noreferrer"
-            className="fa-brands fa-square-github fa-3x opacity-60 hover:opacity-100 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none"
+            className={`fa-brands fa-square-github fa-3x opacity-80 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none ${
+              elementFocusedByTab
+                ? 'focus:text-[#00d1ce] focus:outline-none'
+                : 'focus:outline-none'
+            }`}
           />
           <a
             href={demoUrl}
             onClick={handleButtonClick}
             onKeyDown={handleKeyDown}
+            onKeyUp={handleElementFocusedByTab}
+            onBlur={() => setElementFocusedByTab(false)}
             target="_blank"
             rel="noopener noreferrer"
-            className={`fa-3x opacity-60 hover:opacity-100  ${demoIcon} active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none`}
+            className={`${demoIcon} fa-3x opacity-80 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none ${
+              elementFocusedByTab
+                ? 'focus:text-[#00d1ce] focus:outline-none'
+                : 'focus:outline-none'
+            }`}
           />
         </div>
       </div>

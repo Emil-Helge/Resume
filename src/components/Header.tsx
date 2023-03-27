@@ -6,7 +6,7 @@ import LanguageToggle from './LanguageToggleBtn';
 function Header() {
   const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [burgerMenuFocusedByTab, setBurgerMenuFocusedByTab] = useState(false);
+  const [elementFocusedByTab, setElementFocusedByTab] = useState(false);
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -15,11 +15,11 @@ function Header() {
     toggleMenu
   );
 
-  const handleBurgerMenuTab = (
+  const handleElementFocusedByTab = (
     event: React.KeyboardEvent<HTMLButtonElement>
   ) => {
     if (event.key === 'Tab') {
-      setBurgerMenuFocusedByTab(true);
+      setElementFocusedByTab(true);
     }
   };
 
@@ -30,10 +30,10 @@ function Header() {
         <div className="text-3xl md:hidden">
           <button
             onClick={toggleMenu}
-            onKeyUp={handleBurgerMenuTab}
-            onBlur={() => setBurgerMenuFocusedByTab(false)}
+            onKeyUp={handleElementFocusedByTab}
+            onBlur={() => setElementFocusedByTab(false)}
             className={`flex absolute top-2 right-2 fa-solid fa-bars h-7 active:text-[#00d1ce] active:bg-tap-transparent ${
-              burgerMenuFocusedByTab
+              elementFocusedByTab
                 ? 'focus:text-[#00d1ce] focus:outline-none'
                 : 'focus:outline-none'
             }`}
