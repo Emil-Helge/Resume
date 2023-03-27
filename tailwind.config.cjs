@@ -7,9 +7,6 @@ module.exports = {
       fontFamily: {
         custom: ['Roboto', 'sans-serif'],
       },
-      backgroundColor: {
-        'tap-transparent': 'rgba(0, 0, 0, 0)',
-      },
     },
     keyframes: {
       wiggle: {
@@ -19,11 +16,6 @@ module.exports = {
     },
     animation: {
       wiggle: 'wiggle 1.2s ease-in-out infinite',
-    },
-  },
-  variants: {
-    extend: {
-      backgroundColor: ['active'],
     },
   },
   plugins: [],
