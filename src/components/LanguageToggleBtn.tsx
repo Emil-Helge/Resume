@@ -20,9 +20,9 @@ function LanguageToggle() {
   return (
     <button
       ref={buttonRef}
-      className={`absolute top-1 left-1 font-extrabold text-lg flex gap-2 place-items-center select-none active:text-[#00d1ce] active:bg-slate-800 border border-slate-800 rounded-full p-1 ${
+      className={`absolute top-1 left-1 font-extrabold text-lg flex gap-2 place-items-center select-none active:text-[#00d1ce] active:bg-transparent border border-slate-800 rounded-full p-1 ${
         btnFocusedByTab
-          ? 'focus-visible:text-[#00d1ce] focus-visible:outline-none'
+          ? 'focus:text-[#00d1ce] focus:outline-none'
           : 'focus:outline-none'
       }`}
       onClick={() => changeLanguage(currentLanguage === 'en' ? 'sv' : 'en')}
