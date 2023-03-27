@@ -1,12 +1,11 @@
 import { useCallback } from 'react';
 
-const useHandleButtonClick = (scrollToId?: boolean) => {
+const useHandleButtonClick = (
+  scrollToId?: boolean,
+  onMenuClose?: () => void
+) => {
   const handleButtonClick = useCallback(
-    (
-      event:
-        | React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>
-        | React.KeyboardEvent<HTMLAnchorElement | HTMLButtonElement>
-    ) => {
+    (event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>) => {
       const buttonElement = event.currentTarget as
         | HTMLAnchorElement
         | HTMLButtonElement;
@@ -26,11 +25,24 @@ const useHandleButtonClick = (scrollToId?: boolean) => {
       }
 
       buttonElement.blur();
+
+      if (onMenuClose) {
+        onMenuClose();
+      }
     },
-    [scrollToId]
+    [scrollToId, onMenuClose]
   );
 
-  return handleButtonClick;
+  const handleKeyDown = useCallback(
+    (event: React.KeyboardEvent<HTMLAnchorElement | HTMLButtonElement>) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        handleButtonClick(event as any);
+      }
+    },
+    [handleButtonClick]
+  );
+
+  return { handleButtonClick, handleKeyDown };
 };
 
 export default useHandleButtonClick;

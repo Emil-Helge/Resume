@@ -7,17 +7,13 @@ function Header() {
   const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [burgerMenuFocusedByTab, setBurgerMenuFocusedByTab] = useState(false);
-  const handleButtonClick = useHandleButtonClick(true);
-
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLAnchorElement>) => {
-    if (event.key === ' ' || event.key === 'Spacebar') {
-      event.preventDefault();
-    }
-  };
+  const { handleButtonClick, handleKeyDown } = useHandleButtonClick(
+    true,
+    toggleMenu
+  );
 
   const handleBurgerMenuTab = (
     event: React.KeyboardEvent<HTMLButtonElement>
@@ -54,7 +50,7 @@ function Header() {
               className={`whitespace-nowrap rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center`}
               data-target="About"
               onClick={handleButtonClick}
-              onKeyDown={handleButtonClick}
+              onKeyDown={handleKeyDown}
             >
               {t('about-title')}
             </a>
@@ -65,7 +61,7 @@ function Header() {
               className={`whitespace-nowrap rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center`}
               data-target="Education"
               onClick={handleButtonClick}
-              onKeyDown={handleButtonClick}
+              onKeyDown={handleKeyDown}
             >
               {t('education-title')}
             </a>
@@ -76,7 +72,7 @@ function Header() {
               className={`whitespace-nowrap rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center`}
               data-target="Skills"
               onClick={handleButtonClick}
-              onKeyDown={handleButtonClick}
+              onKeyDown={handleKeyDown}
             >
               {t('skills-title')}
             </a>
@@ -87,7 +83,7 @@ function Header() {
               className={`whitespace-nowrap rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center`}
               data-target="Portfolio"
               onClick={handleButtonClick}
-              onKeyDown={handleButtonClick}
+              onKeyDown={handleKeyDown}
             >
               {t('portfolio-title')}
             </a>
@@ -98,7 +94,7 @@ function Header() {
               className={`whitespace-nowrap rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center`}
               data-target="Contact"
               onClick={handleButtonClick}
-              onKeyDown={handleButtonClick}
+              onKeyDown={handleKeyDown}
             >
               {t('contact-title')}
             </a>
