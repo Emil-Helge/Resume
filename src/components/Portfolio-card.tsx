@@ -19,8 +19,7 @@ function PortfolioCard({
   demoUrl,
   demoIcon,
 }: Props) {
-  const { handleButtonClick, handleKeyDown, handleTouchEnd } =
-    useHandleButtonClick();
+  const { handleButtonClick, handleKeyDown } = useHandleButtonClick();
 
   return (
     <div className="max-w-xs flex flex-col gap-3 text-center">
@@ -28,7 +27,6 @@ function PortfolioCard({
         href={demoUrl}
         onClick={handleButtonClick}
         onKeyDown={handleKeyDown}
-        onTouchEnd={handleTouchEnd}
         target="_blank"
         rel="noopener noreferrer"
         className="rounded-2xl h-full drop-shadow-[0_0_0.15rem_rgba(0,209,205,0.5)]"
@@ -44,7 +42,6 @@ function PortfolioCard({
             href={githubUrl}
             onClick={handleButtonClick}
             onKeyDown={handleKeyDown}
-            onTouchEnd={handleTouchEnd}
             target="_blank"
             rel="noopener noreferrer"
             className="fa-brands fa-square-github fa-3x opacity-60 hover:opacity-100 hover:text-[#00d1cd] focus:text-[#00d1ceb4] focus:outline-none focus:opacity-100"
@@ -53,7 +50,6 @@ function PortfolioCard({
             href={demoUrl}
             onClick={handleButtonClick}
             onKeyDown={handleKeyDown}
-            onTouchEnd={handleTouchEnd}
             target="_blank"
             rel="noopener noreferrer"
             className={`fa-3x opacity-60 hover:opacity-100 hover:text-[#00d1cd] ${demoIcon} focus:text-[#00d1ceb4] focus:outline-none focus:opacity-100`}

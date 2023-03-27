@@ -4,8 +4,7 @@ import selfie from '../images/Selfie.jpg';
 
 function Contact() {
   const { t } = useTranslation();
-  const { handleButtonClick, handleKeyDown, handleTouchEnd } =
-    useHandleButtonClick();
+  const { handleButtonClick, handleKeyDown } = useHandleButtonClick();
 
   return (
     <>
@@ -27,7 +26,6 @@ function Contact() {
             href="https://www.linkedin.com/in/emil-helgesson94/"
             onClick={handleButtonClick}
             onKeyDown={handleKeyDown}
-            onTouchEnd={handleTouchEnd}
             target="_blank"
             id="linkedinIcon"
             className="fa-brands fa-linkedin fa-3x opacity-60 hover:opacity-100 hover:text-[#00d1cd] focus:text-[#00d1ceb4] focus:outline-none focus:opacity-100"
@@ -36,7 +34,6 @@ function Contact() {
             href="https://github.com/Emil-Helge"
             onClick={handleButtonClick}
             onKeyDown={handleKeyDown}
-            onTouchEnd={handleTouchEnd}
             target="_blank"
             id="githubIcon"
             className="fa-brands fa-square-github fa-3x opacity-60 hover:opacity-100 hover:text-[#00d1cd] focus:text-[#00d1ceb4] focus:outline-none focus:opacity-100"
@@ -45,7 +42,6 @@ function Contact() {
             href="mailto:emil.helgesson@medieinstitutet.se"
             onClick={handleButtonClick}
             onKeyDown={handleKeyDown}
-            onTouchEnd={handleTouchEnd}
             target="_blank"
             id="emailIcon"
             className="fa-solid fa-square-envelope fa-3x opacity-60 hover:opacity-100 hover:text-[#00d1cd] focus:text-[#00d1ceb4] focus:outline-none focus:opacity-100"
