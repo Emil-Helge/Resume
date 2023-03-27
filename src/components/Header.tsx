@@ -10,10 +10,15 @@ function Header() {
     setMenuOpen(!menuOpen);
   };
 
-  const ScrollToId = (event: React.MouseEvent<HTMLAnchorElement>) => {
+  const ScrollToId = (
+    event:
+      | React.MouseEvent<HTMLAnchorElement>
+      | React.KeyboardEvent<HTMLAnchorElement>
+  ) => {
     event.preventDefault();
+    const anchorElement = event.currentTarget as HTMLAnchorElement;
     toggleMenu();
-    const targetId = event.currentTarget.dataset.target as string;
+    const targetId = anchorElement.dataset.target as string;
     const targetElement = document.getElementById(targetId) as HTMLElement;
 
     const ulElement = document.querySelector('ul') as HTMLElement;
@@ -23,6 +28,8 @@ function Header() {
       behavior: 'smooth',
       top: scrollPosition,
     });
+
+    anchorElement.blur();
   };
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLAnchorElement>) => {
