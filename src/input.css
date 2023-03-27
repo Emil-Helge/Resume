@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  a, button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  a::selection, button::selection {
+    background-color: transparent;
+  }
+}
