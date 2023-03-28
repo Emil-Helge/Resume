@@ -75,7 +75,7 @@ export function initBackgroundAnimation() {
     const posY = 0;
 
     const size = Math.random() * 6;
-    const speedX = Math.random() - 1.5;
+    const speedX = Math.random() - 0.5;
     const speedY = Math.random() + 0.1;
 
     particles.push(new Particle(posX, posY, size, speedX, speedY));
