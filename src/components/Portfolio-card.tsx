@@ -32,7 +32,7 @@ function PortfolioCard({
   };
 
   return (
-    <div className="max-w-xs flex flex-col gap-3 text-center">
+    <div className="max-w-xs flex flex-col gap-2 text-center">
       <a
         href={demoUrl}
         onClick={handleButtonClick}
@@ -41,12 +41,18 @@ function PortfolioCard({
         rel="noopener noreferrer"
         className="rounded-2xl h-full drop-shadow-[0_0_0.15rem_rgba(0,209,205,0.5)]"
       >
-        <img src={imageSrc} alt={altText} className="rounded-2xl h-full" />
+        <img
+          src={imageSrc}
+          alt={altText}
+          className="rounded-2xl min-h-[10rem]"
+        />
       </a>
 
-      <div className="bg-slate-900 min-h-[23rem] flex flex-col place-content-between rounded-2xl ">
-        <p className=" px-3 mt-3">{firstDescription}</p>
-        <p className=" px-3">{secondDescription}</p>
+      <div className="bg-slate-900 min-h-[26rem] flex flex-col place-content-between rounded-2xl ">
+        <div className="flex flex-col gap-3">
+          <p className=" px-3 mt-3">{firstDescription}</p>
+          <p className=" px-3">{secondDescription}</p>
+        </div>
         <div className="flex place-content-between p-3">
           <a
             href={githubUrl}

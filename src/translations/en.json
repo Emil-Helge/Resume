@@ -17,9 +17,9 @@
 
   "portfolio-description-header":"Here are a couple of group projects that I have had the pleasure of working on along with fellow students from Medieinstitutet",
   "portfolio-bumpy-description-one": "Bumpy Monster is a collaboration between myself and five other students, developed as part of an assignment. We utilized p5.js, TypeScript, and Object-Oriented Programming (OOP) to create this exciting game.",
-  "portfolio-bumpy-description-two": "Discover more about Bumpy Monster or experience the game for yourself with the following links:",
+  "portfolio-bumpy-description-two": "Discover more about Bumpy Monster or experience the game for yourself with the following links below.",
   "portfolio-GHEDb-description-one": "GHEDb is a web application designed by myself and two other students for an assignment. The project involved using React, TypeScript, API integration and Styled-Components to create a pleasant user experience.",
-  "portfolio-GHEDb-description-two": "Discover more about GHEDb or explore the site on your own using these links:",
+  "portfolio-GHEDb-description-two": "Discover more about GHEDb or explore the site on your own using the links below.",
 
   "contact-text": "If you would like to get in touch with me or learn more about me, you can visit my LinkedIn page or send me an email by clicking the icons below. Additionally, if you are curious about more of my previous projects and want to know what I am currently working on, you can also visit my GitHub page."
 }
