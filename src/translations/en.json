@@ -7,7 +7,7 @@
 
   "about-header": "About Me",
   "front-end": "Front End Developer Student",
-  "about-text-one":"I am currently enrolled in a two-year program at Medieinstitutet in Gothenburg, aiming to work as a Front-End Developer in the coming years. I have had a genuine interest in web development for almost a decade and am eager to put my passion into practice and learn all the ins and outs that come with the territory. I also have a strong drive to continually learn and experience new things. Whether it is about new subjects in my studies or new and exciting activities in my spare time, I am open to it.",
+  "about-text-one":"I am currently enrolled in a two-year program at Medieinstitutet in Gothenburg, aiming to start working as a Front-End Developer within the coming years. I have had a genuine interest in web development for almost a decade and am eager to put my passion into practice and learn all the ins and outs that come with the territory. I also have a strong drive to continually learn and experience new things. Whether it is about new subjects in my studies or new and exciting activities in my spare time, I am open to it.",
   "about-text-two": "I aspire to be up to date and familiar with the most frequently occuring frameworks such as React, Angular & Vue in order to be able to adapt and adjust accordingly.",
   "skills-header": "Skills",
   
@@ -16,10 +16,10 @@
   "skills-description-two": "Working with interface design in Figma",
 
   "portfolio-description-header":"Here are a couple of group projects that I have had the pleasure of working on along with fellow students from Medieinstitutet",
-  "portfolio-bumpy-description-one": "Bumpy Monster was created for an assignment by myself and five other students where we used p5.js, TypeScript and worked with OOP.",
-  "portfolio-bumpy-description-two": "Learn more about the game or try it out by checking it out on GitHub or play the demo by clicking the links below",
-  "portfolio-GHEDb-description-one": "GHEDb was created for an assignment by myself and two other students where we used React, Typescript, worked with an API and used Styled-Components.",
-  "portfolio-GHEDb-description-two": "Learn more about the site or browse it for yourself by checking it out on GitHub or view the demo by clicking the links below",
+  "portfolio-bumpy-description-one": "Bumpy Monster is a collaboration between myself and five other students, developed as part of an assignment. We utilized p5.js, TypeScript, and Object-Oriented Programming (OOP) to create this exciting game.",
+  "portfolio-bumpy-description-two": "Discover more about Bumpy Monster or experience the game for yourself with the following links:",
+  "portfolio-GHEDb-description-one": "GHEDb is a web application designed by myself and two other students for an assignment. The project involved using React, TypeScript, API integration and Styled-Components to create a pleasant user experience.",
+  "portfolio-GHEDb-description-two": "Discover more about GHEDb or explore the site on your own using these links:",
 
   "contact-text": "If you would like to get in touch with me or learn more about me, you can visit my LinkedIn page or send me an email by clicking the icons below. Additionally, if you are curious about more of my previous projects and want to know what I am currently working on, you can also visit my GitHub page."
 }
