@@ -9,7 +9,7 @@ function About() {
     <>
       <div
         id="About"
-        className="flex flex-col pl-5 pr-5 pt-5 gap-3 text-lg w-fit md:w-2/3"
+        className="flex flex-col pl-5 pr-5 pt-5 gap-3 text-lg w-fit md:w-2/3 bg-slate-800 bg-opacity-40"
       >
         <h1 className="text-4xl font-mono font-extrabold mb-2 pt-7 md:pt-0 first-letter:text-[#00d1cd]">
           {t('about-header')}
