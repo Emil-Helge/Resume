@@ -1,7 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import PortfolioCard from './Portfolio-card';
-import Bumpy from '/src/images/bumpy.png';
 import GHEDb from '/src/images/GHEDb.png';
+import Tech101 from '/src/images/Tech101.png';
+import Bumpy from '/src/images/bumpy.png';
 
 function Portfolio() {
   const { t } = useTranslation();
@@ -37,6 +38,15 @@ function Portfolio() {
           githubUrl="https://github.com/Emil-Helge/GHE-Movie-App"
           demoUrl="https://ghedb.netlify.app/"
           demoIcon="fa-solid fa-film"
+        />
+        <PortfolioCard
+          imageSrc={Tech101}
+          altText="Tech101 title"
+          firstDescription={t('portfolio-Tech101-description-one')}
+          secondDescription={t('portfolio-Tech101-description-two')}
+          githubUrl="https://github.com/Emil-Helge/Tech-101-Webshop"
+          demoUrl="https://tech-101-webshop.netlify.app/"
+          demoIcon="fa-solid fa-computer"
         />
       </div>
     </>
