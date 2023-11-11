@@ -21,6 +21,7 @@ function Skills() {
     { label: 'Javascript', value: 75 },
     { label: 'Typescript', value: 71 },
     { label: 'React', value: 55 },
+    { label: 'CSharp', value: 23 },
   ];
 
   let totalDuration = 0;
@@ -48,7 +49,7 @@ function Skills() {
         </h1>
         {skillsData.map(({ label }) => (
           <div ref={ref} key={label} className="self-end">
-            <div>{label.replace(/-and-/g, ' & ')}</div>
+            <div>{label.replace(/-and-/g, ' & ').replace('CSharp', 'C#')}</div>
             <div className="flex bg-slate-700 border-r-[0.1rem] border-[#00d1cd] rounded-lg h-10 w-60">
               <div
                 className={`  h-10  bg-gray-300 rounded-lg ${
