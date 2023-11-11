@@ -57,13 +57,13 @@ function Header() {
           </li>
           <li className="w-full">
             <a
-              href="#Education"
+              href="#Experience"
               className={`whitespace-nowrap rounded-xl p-2 border-[#00d1cd] hover:bg-[#00d1ceb4] focus:bg-[#00d1ceb4] focus:outline-none w-full block md:inline text-center`}
-              data-target="Education"
+              data-target="Experience"
               onClick={handleButtonClick}
               onKeyDown={handleKeyDown}
             >
-              {t('education-title')}
+              {t('experience-title')}
             </a>
           </li>
           <li className="w-full">
