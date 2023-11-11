@@ -32,7 +32,7 @@ function Header() {
             onClick={toggleMenu}
             onKeyUp={handleElementFocusedByTab}
             onBlur={() => setElementFocusedByTab(false)}
-            className={`flex absolute top-2 right-2 fa-solid fa-bars h-7 active:text-[#00d1ce] active:bg-tap-transparent ${
+            className={`hover:text-[#00d1cd] flex absolute top-2 right-2 fa-solid fa-bars h-7 active:text-[#00d1ce] active:bg-tap-transparent ${
               elementFocusedByTab
                 ? 'focus:text-[#00d1ce] focus:outline-none'
                 : 'focus:outline-none'

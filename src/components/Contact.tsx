@@ -40,7 +40,7 @@ function Contact() {
             onBlur={() => setElementFocusedByTab(false)}
             target="_blank"
             id="linkedinIcon"
-            className={`fa-brands fa-linkedin fa-3x opacity-80 active:text-[#00d1ce] active:bg-tap-transparent ${
+            className={`hover:animate-wiggle hover:text-[#00d1cd] fa-brands fa-linkedin fa-3x opacity-80 active:text-[#00d1ce] active:bg-tap-transparent ${
               elementFocusedByTab
                 ? 'focus:text-[#00d1ce] focus:outline-none'
                 : 'focus:outline-none'
@@ -54,7 +54,7 @@ function Contact() {
             onBlur={() => setElementFocusedByTab(false)}
             target="_blank"
             id="githubIcon"
-            className={`fa-brands fa-square-github fa-3x opacity-80 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none ${
+            className={`hover:animate-wiggle hover:text-[#00d1cd] fa-brands fa-square-github fa-3x opacity-80 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none ${
               elementFocusedByTab
                 ? 'focus:text-[#00d1ce] focus:outline-none'
                 : 'focus:outline-none'
@@ -68,7 +68,7 @@ function Contact() {
             onBlur={() => setElementFocusedByTab(false)}
             target="_blank"
             id="emailIcon"
-            className={`fa-solid fa-square-envelope fa-3x opacity-80 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none ${
+            className={`hover:animate-wiggle hover:text-[#00d1cd] fa-solid fa-square-envelope fa-3x opacity-80 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none ${
               elementFocusedByTab
                 ? 'focus:text-[#00d1ce] focus:outline-none'
                 : 'focus:outline-none'

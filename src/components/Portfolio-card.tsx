@@ -39,7 +39,7 @@ function PortfolioCard({
         onKeyDown={handleKeyDown}
         target="_blank"
         rel="noopener noreferrer"
-        className="rounded-2xl h-full drop-shadow-[0_0_0.15rem_rgba(0,209,205,0.5)]"
+        className="hover:animate-wiggle rounded-2xl h-full drop-shadow-[0_0_0.15rem_rgba(0,209,205,0.5)]"
       >
         <img
           src={imageSrc}
@@ -62,7 +62,7 @@ function PortfolioCard({
             onBlur={() => setElementFocusedByTab(false)}
             target="_blank"
             rel="noopener noreferrer"
-            className={`fa-brands fa-square-github fa-3x opacity-80 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none ${
+            className={`hover:animate-wiggle hover:text-[#00d1cd] fa-brands fa-square-github fa-3x opacity-80 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none ${
               elementFocusedByTab
                 ? 'focus:text-[#00d1ce] focus:outline-none'
                 : 'focus:outline-none'
@@ -76,7 +76,7 @@ function PortfolioCard({
             onBlur={() => setElementFocusedByTab(false)}
             target="_blank"
             rel="noopener noreferrer"
-            className={`${demoIcon} fa-3x opacity-80 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none ${
+            className={`hover:animate-wiggle hover:text-[#00d1cd] ${demoIcon} fa-3x opacity-80 active:text-[#00d1ce] active:bg-tap-transparent focus:outline-none ${
               elementFocusedByTab
                 ? 'focus:text-[#00d1ce] focus:outline-none'
                 : 'focus:outline-none'
