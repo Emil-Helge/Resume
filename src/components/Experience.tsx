@@ -21,12 +21,12 @@ function Experience() {
             <h5 className="font-serif font-extrabold">Medieinstitutet</h5>
             <p>2022-2024</p>
           </div>
-          <div>
-            <h5 className="font-serif font-extrabold">
-              {t('experience-fujitsu')}
-            </h5>
-            <p>{t('experience-fujitsu-period')}</p>
-          </div>
+        </div>
+        <div>
+          <h5 className="font-serif font-extrabold">
+            {t('experience-fujitsu')}
+          </h5>
+          <p>{t('experience-fujitsu-period')}</p>
         </div>
       </div>
     </>
